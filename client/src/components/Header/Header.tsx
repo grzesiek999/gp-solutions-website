@@ -1,15 +1,12 @@
 import WebsiteNav from "../WebsiteNav/WebsiteNav.tsx";
+import CompanyLogo from "../CompanyLogo/CompanyLogo.tsx";
+import styles from "./Header.module.scss";
 
 const Header = () => {
     return (
         <header>
-            <div>
-                <div className={``}>
-                    <img src={`src/assets/icons/gp-solutions.png`}
-                         alt="GP solutions icon error"
-                         className={`gp-solution-icon`}
-                    />
-                </div>
+            <div className={`${styles.websiteLayoutHeaderDiv}`}>
+                <CompanyLogo className={styles.websiteLayoutLogo}/>
                 <WebsiteNav />
             </div>
         </header>
