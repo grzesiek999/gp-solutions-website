@@ -1,0 +1,42 @@
+@use '../../styles/variables' as *;
+
+.homePageBannerDiv {
+  box-sizing: border-box;
+  width: 100%;
+  height: 800px;
+  background-image: url("src/assets/images/home_page_photo.png");
+}
+
+.hamePageBannerContent {
+  padding: 100px 0 0 75px;
+  box-sizing: border-box;
+  width: 740px;
+}
+
+.hamePageBannerContent span{
+  display: flex;
+  color: $footer-text-color;
+  font-family: $home-page-banner-font;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.hamePageBannerContent p{
+  color: $footer-text-color;
+  font-family: $home-page-banner-font;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.homePageBannerButtonsDiv {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.homePageBannerContactButton {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+}

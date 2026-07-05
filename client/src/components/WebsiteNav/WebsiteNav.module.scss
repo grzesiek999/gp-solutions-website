@@ -18,15 +18,15 @@
 
 .websiteLayoutNavContainer a {
   text-decoration: none;
-  color: black;
-  font-family: 'Inter', sans-serif;
+  color: $header-text-color;
+  font-family: $font-main;
   font-size: 16px;
   font-weight: 600;
 }
 
 .active{
   transition: all 0.4s ease-in-out;
-  color: #056cfe !important;
+  color: $header-active-page-text-color !important;
   font-weight: 700;
 }
 

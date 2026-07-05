@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .websiteLayoutHeaderDiv {
   padding: 0px 50px;
   box-sizing: border-box;
@@ -7,7 +9,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid $header-border-color;
 }
 
 .websiteLayoutLogo {
