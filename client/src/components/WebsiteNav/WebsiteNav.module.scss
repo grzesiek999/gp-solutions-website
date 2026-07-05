@@ -17,9 +17,13 @@
 .websiteLayoutNavContainer a {
   text-decoration: none;
   color: black;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .active{
   transition: all 0.4s ease-in-out;
   color: #056cfe !important;
+  font-weight: 700;
 }

@@ -1,4 +1,5 @@
-import WebsiteNav from "../WebsiteNav/WebsiteNav.tsx";
+import {Link} from "react-router-dom";
+import {WebsiteNavHeader} from "../WebsiteNav/WebsiteNav.tsx";
 import CompanyLogo from "../CompanyLogo/CompanyLogo.tsx";
 import styles from "./Header.module.scss";
 
@@ -6,8 +7,8 @@ const Header = () => {
     return (
         <header>
             <div className={`${styles.websiteLayoutHeaderDiv}`}>
-                <CompanyLogo className={styles.websiteLayoutLogo}/>
-                <WebsiteNav />
+                <Link to={'/'}><CompanyLogo className={styles.websiteLayoutLogo} path={`src/assets/icons/gp-solutions-blue.png`}/></Link>
+                <WebsiteNavHeader />
             </div>
         </header>
     )

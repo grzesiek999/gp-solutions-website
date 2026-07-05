@@ -1,9 +1,9 @@
 
 
-const CompanyLogo= ({className}: {className: string}) => {
+const CompanyLogo= ({className, path}: {className: string, path: string}) => {
     return (
         <div>
-            <img src={`src/assets/icons/gp-solutions.png`}
+            <img src={path}
                  alt="GP solutions icon error"
                  className={className}
             />

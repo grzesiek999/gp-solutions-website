@@ -8,7 +8,7 @@ const NAV_ITEMS = [
     { label: "Kontakt", path: "/contact" }
 ];
 
-const WebsiteNav = () => {
+const WebsiteNavHeader = () => {
     const {pathname} = useLocation();
 
     return (
@@ -26,4 +26,20 @@ const WebsiteNav = () => {
     )
 }
 
-export default WebsiteNav;
+const WebsiteNavFooter = () => {
+    return (
+        <div className={``}>
+            <nav>
+                <ul>
+                    {NAV_ITEMS.map((item) => (
+                        <li>
+                            <Link to={item.path} className={``}>{item.label}</Link>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </div>
+    )
+}
+
+export {WebsiteNavHeader, WebsiteNavFooter};
