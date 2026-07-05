@@ -7,27 +7,29 @@ const FooterInformation = () => {
         <div className={styles.footerInformationDiv}>
             <div className={styles.footerInformationChunk}>
                 <CompanyLogo className={styles.websiteFooterLogo} path={'src/assets/icons/gp-solutions-white.png'} />
-                <span>Kompleksowa opieka IT dla firm. Bezpieczeństwo, niezawodność i wsparcie na którym możesz polegać.</span>
+                <span className={styles.footerSpanType1}>
+                    Kompleksowa opieka IT dla firm. Bezpieczeństwo, niezawodność i wsparcie na którym możesz polegać.
+                </span>
             </div>
             <div className={styles.footerInformationChunk}>
-                <span>Dane kontaktowe</span>
+                <span className={styles.footerSpanTitle}>Dane kontaktowe</span>
                 <ul>
                     <li>
-                        <img src={``} alt={'phone icon error'} className={``}/>
-                        <span>+48 608 158 611</span>
+                        <img src={`src/assets/icons/phone-icon.png`} alt={'phone icon error'} />
+                        <span className={styles.footerSpanType1}>+48 608 158 611</span>
                     </li>
                     <li>
-                        <img src={``} alt={'mail icon error'} className={``}/>
-                        <span>grzegorz.pasich@o2.pl</span>
+                        <img src={`src/assets/icons/mail-icon.png`} alt={'mail icon error'} />
+                        <span className={styles.footerSpanType1}>grzegorz.pasich@o2.pl</span>
                     </li>
                     <li>
-                        <img src={``} alt={'pineapple icon error'} className={``}/>
-                        <span>Cała Polska</span>
+                        <img src={`src/assets/icons/pineapple-icon.png`} alt={'pineapple icon error'} />
+                        <span className={styles.footerSpanType1}>Cała Polska</span>
                     </li>
                 </ul>
             </div>
             <div className={`${styles.footerInformationChunk} ${styles.lastChunk}`}>
-                <span>Menu</span>
+                <span className={styles.footerSpanTitle}>Menu</span>
                 <WebsiteNavFooter />
             </div>
         </div>

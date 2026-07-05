@@ -28,7 +28,7 @@ const WebsiteNavHeader = () => {
 
 const WebsiteNavFooter = () => {
     return (
-        <div className={``}>
+        <div className={styles.footerNavContainerDiv}>
             <nav>
                 <ul>
                     {NAV_ITEMS.map((item) => (

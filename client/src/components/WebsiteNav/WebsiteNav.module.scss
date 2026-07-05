@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .websiteLayoutNavContainer ul {
   margin: 0;
   padding: 0;
@@ -26,4 +28,23 @@
   transition: all 0.4s ease-in-out;
   color: #056cfe !important;
   font-weight: 700;
+}
+
+.footerNavContainerDiv ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.footerNavContainerDiv ul li{
+  margin-bottom: 15px !important;
+}
+
+.footerNavContainerDiv a {
+  text-decoration: none;
+  color: $footer-text-color;
+  font-family: $font-main;
+  font-size: 16px;
 }
