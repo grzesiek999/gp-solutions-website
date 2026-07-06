@@ -15,11 +15,11 @@ const FooterInformation = () => {
                 <span className={styles.footerSpanTitle}>Dane kontaktowe</span>
                 <ul>
                     <li>
-                        <img src={`src/assets/icons/phone-icon.png`} alt={'phone icon error'} />
+                        <img src={`src/assets/icons/blue-phone-icon.png`} alt={'phone icon error'} />
                         <span className={styles.footerSpanType1}>+48 608 158 611</span>
                     </li>
                     <li>
-                        <img src={`src/assets/icons/mail-icon.png`} alt={'mail icon error'} />
+                        <img src={`src/assets/icons/blue-mail-icon.png`} alt={'mail icon error'} />
                         <span className={styles.footerSpanType1}>grzegorz.pasich@o2.pl</span>
                     </li>
                     <li>

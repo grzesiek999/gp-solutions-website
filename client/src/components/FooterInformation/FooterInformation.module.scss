@@ -20,7 +20,7 @@
 
 .websiteFooterLogo {
   box-sizing: border-box;
-  width: clamp(175px, 50%, 300px);
+  width: clamp(200px, 60%, 400px);
   margin-bottom: 25px;
 }
 
@@ -30,7 +30,7 @@
   align-items: center;
   width: clamp(190px, 75%, 400px);
   color: $footer-text-color;
-  font-size: 16px;
+  font-size: 20px;
   font-family: $font-main;
 }
 
@@ -39,7 +39,7 @@
   display: flex;
   width: 75%;
   color: $footer-text-color;
-  font-size: 19px;
+  font-size: 24px;
   font-weight: 500;
   font-family: $font-main;
 }
@@ -64,5 +64,5 @@
 
 .footerInformationChunk ul li img{
   margin-right: 10px;
-  width: 25px;
+  width: 30px;
 }
