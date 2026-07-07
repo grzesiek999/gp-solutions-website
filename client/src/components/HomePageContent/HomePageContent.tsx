@@ -23,7 +23,7 @@ const HomePageContent = () => {
                         content={'Regularne kopie zapasowe to pewność i spokój dla Twojej firmy.'}
                     />
                     <HomePageContentThing
-                        img_name={''}
+                        img_name={'const-it-care'}
                         title={'Stała opieka IT'}
                         content={'Zapewniamy stałe wsparcie i proaktywne dbanie o Twoje systemy.'}
                     />
@@ -33,13 +33,13 @@ const HomePageContent = () => {
                 <span className={styles.homePageContentMainPartTitle}>Nasze usługi</span>
                 <div className={styles.homePageContentMainPartThingsContainer}>
                     <HomePageContentThing
-                        img_name={'-icon'}
+                        img_name={'it-care-icon'}
                         title={'Opieka IT'}
                         content={'Kompleksowa obsługa informatyczna i helpdesk dla Twojej firmy.'}
                         link={'/services'}
                     />
                     <HomePageContentThing
-                        img_name={'-icon'}
+                        img_name={'cybersecurity-icon'}
                         title={'Cyberbezpieczeństwo'}
                         content={'Zabezpieczamy Twoje środowisko IT przed współczesnymi zagrożeniami.'}
                         link={'/services'}
@@ -51,7 +51,7 @@ const HomePageContent = () => {
                         link={'/services'}
                     />
                     <HomePageContentThing
-                        img_name={'-icon'}
+                        img_name={'education-icon'}
                         title={'Szkolenia'}
                         content={'Szkolenia dla pracowników z zakresu cyberbezpieczeństwa i obsługi systemów.'}
                         link={'/services'}
