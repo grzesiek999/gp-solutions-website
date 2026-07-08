@@ -1,6 +1,7 @@
 import styles from "./FooterInformation.module.scss";
 import CompanyLogo from "../CompanyLogo/CompanyLogo.tsx";
 import {WebsiteNavFooter} from "../WebsiteNav/WebsiteNav.tsx";
+import ContactDataList from "../ContactDataList/ContactDataList.tsx";
 
 const FooterInformation = () => {
     return (
@@ -11,23 +12,12 @@ const FooterInformation = () => {
                     Kompleksowa opieka IT dla firm. Bezpieczeństwo, niezawodność i wsparcie na którym możesz polegać.
                 </span>
             </div>
-            <div className={styles.footerInformationChunk}>
-                <span className={styles.footerSpanTitle}>Dane kontaktowe</span>
-                <ul>
-                    <li>
-                        <img src={`src/assets/icons/blue-phone-icon.png`} alt={'phone icon error'} />
-                        <span className={styles.footerSpanType1}>+48 608 158 611</span>
-                    </li>
-                    <li>
-                        <img src={`src/assets/icons/blue-mail-icon.png`} alt={'mail icon error'} />
-                        <span className={styles.footerSpanType1}>grzegorz.pasich@o2.pl</span>
-                    </li>
-                    <li>
-                        <img src={`src/assets/icons/pineapple-icon.png`} alt={'pineapple icon error'} />
-                        <span className={styles.footerSpanType1}>Cała Polska</span>
-                    </li>
-                </ul>
-            </div>
+            <ContactDataList
+                containerClassName={styles.footerInformationChunk}
+                titleSpanClassName={styles.footerSpanTitle}
+                dataSpanClassName={styles.footerSpanType1}
+                imgClassName={styles.footerInformationContactDataImg}
+            />
             <div className={`${styles.footerInformationChunk} ${styles.lastChunk}`}>
                 <span className={styles.footerSpanTitle}>Menu</span>
                 <WebsiteNavFooter />

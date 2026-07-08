@@ -1,10 +1,13 @@
+import ContactPageBanner from "../../components/ContactPageBanner/ContactPageBanner.tsx";
+import ContactPageContent from "../../components/ContactPageContent/ContactPageContent.tsx";
 
 
 const ContactPage = () => {
     return (
-        <div>
-            ffff
-        </div>
+        <main>
+            <ContactPageBanner />
+            <ContactPageContent />
+        </main>
     )
 }
 
