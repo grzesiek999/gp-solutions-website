@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 
-.contactPageFormDiv label{
+.contactPageFormDiv form label{
   box-sizing: border-box;
   font-family: $font-main;
   font-weight: 600;
@@ -32,8 +32,8 @@
   margin-bottom: 10px;
 }
 
-.contactPageFormDiv input, textarea{
-  margin-bottom: 20px;
+.contactPageFormDiv form input, textarea{
+  margin-bottom: 25px;
   box-sizing: border-box;
   padding: 10px;
   outline: none;
@@ -42,4 +42,46 @@
   font-size: 18px;
   border: 1px solid $contact-input-border-color;
   border-radius: 6px;
+}
+
+.buttonDivInf {
+  width: 60%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactPageFormDiv form button{
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 7% 0 10%;
+  background-color: $home-page-button-blue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contactPageFormDiv form button span{
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 20px;
+  color: $footer-text-color
+}
+
+.contactPageFormDiv form button img{
+  width: 30px;
+  margin-left: auto;
+}
+
+.buttonDivInf p{
+  margin: 10px 0;
+  text-align: center;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 16px;
+  color: $header-text-color
 }

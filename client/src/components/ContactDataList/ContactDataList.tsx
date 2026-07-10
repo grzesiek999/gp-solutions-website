@@ -40,7 +40,7 @@ const ContactDataList = ({
                         alt={'pineapple icon error'}
                         className={imgClassName}
                     />
-                    <span className={dataSpanClassName}>Cała Polska</span>
+                    <span className={dataSpanClassName}>Dębowa 10, 32-340 Wolbrom</span>
                 </li>
                 {workHoursLiDivClassName &&
                     <li>
