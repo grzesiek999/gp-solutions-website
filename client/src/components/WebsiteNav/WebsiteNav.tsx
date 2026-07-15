@@ -5,7 +5,7 @@ import Button from "../Button/Button.tsx";
 const NAV_ITEMS = [
     { label: "Strona główna", path: "/" },
     { label: "Usługi", path: "/services" },
-    { label: "O firmie", path: "/about_company" },
+    { label: "O nas", path: "/about_us" },
     { label: "Kontakt", path: "/contact" }
 ];
 

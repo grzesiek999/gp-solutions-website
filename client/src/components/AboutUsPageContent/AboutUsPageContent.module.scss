@@ -1,0 +1,27 @@
+
+
+.aboutUsPageContentMainDiv {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px 75px;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutUsPageContentDiv {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUsPageContentLogoDiv {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUsPageContentLogoDiv img {
+  height: 300px;
+}
