@@ -1,0 +1,36 @@
+@use '../../styles/variables' as *;
+
+.contactPageMapMainDiv {
+  box-sizing: border-box;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contactPageInfoDiv {
+  box-sizing: border-box;
+  width: 40%;
+  height: 100%;
+  padding: 50px 75px;
+  background-color: $contact-page-map-info-background-color;
+}
+
+.contactPageInfoDiv span{
+  font-family: $home-page-banner-font;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.contactPageInfoDiv p{
+  font-family: $home-page-banner-font;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.contactPageMapDiv {
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+}

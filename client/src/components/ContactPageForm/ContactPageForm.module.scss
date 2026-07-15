@@ -3,7 +3,7 @@
 .contactPageFormDiv {
   padding: 0 150px 0 0;
   box-sizing: border-box;
-  width: 55%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   border-right: 2px solid $contact-content-border-color;
@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 7% 0 10%;
+  padding: 0 10% 0 15%;
   background-color: $home-page-button-blue;
   border: none;
   border-radius: 10px;
