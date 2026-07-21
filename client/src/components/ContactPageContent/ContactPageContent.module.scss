@@ -39,7 +39,7 @@
   display: flex;
   width: 100%;
   color: $header-text-color;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
   font-family: $font-main;
 }
@@ -49,24 +49,24 @@
   flex-direction: row;
   align-items: center;
   color: $header-text-color;
-  font-size: 20px;
+  font-size: 26px;
   font-family: $font-main;
 }
 
 .contactDataImg{
-  margin-right: 25px;
-  width: 50px;
-  height: 50px;
+  margin-right: 35px;
+  width: 60px;
+  height: 60px;
 }
 
 .workHoursDiv .contactDataSpan{
-  margin: 15px 0;
+  margin: 20px 0;
   font-weight: 600 !important;
 }
 
 .workHoursDiv p{
-  margin: 0 0 8px 0;
+  margin: 0 0 10px 0;
   color: $header-text-color;
-  font-size: 20px;
+  font-size: 26px;
   font-family: $font-main;
 }
