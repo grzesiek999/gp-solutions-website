@@ -5,15 +5,15 @@ const AboutUsPageContent = () => {
     return (
         <div className={styles.aboutUsPageContentMainDiv}>
             <div className={styles.aboutUsPageContentDiv}>
-                <div>
-                    <span>Kim jesteśmy?</span>
+                <div className={styles.aboutUsPageContentFirstPartDiv}>
+                    <span className={styles.aboutUsPageContentTitleSpan}>Kim jesteśmy?</span>
                     <p>GP IT Solutions to firma specjalizująca się w
                         kompleksowej obsłudze informatycznej dla małych i średnich firm.</p>
                     <p>Pomagamy przedsiębiorcom bezpiecznie rozwijać biznes, dostarczając niezawodne wsparcie IT,
                         zabezpieczenia oraz rozwiązania dopasowane do ich potrzeb.</p>
                 </div>
-                <div>
-                    <span>Jak pracujemy?</span>
+                <div className={styles.aboutUsPageContentSecondPartDiv}>
+                    <span className={styles.aboutUsPageContentTitleSpan}>Jak pracujemy?</span>
                     <HowWeWorkList />
                 </div>
             </div>

@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+
+.aboutUsPageInfoDiv {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 75px;
+}
+
+.aboutUsPageInfoDiv span{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: $font-main;
+  margin-bottom: 30px;
+}
+
+.aboutUsPageInfoDiv p{
+  font-size: 26px;
+  font-weight: 400;
+  font-family: $font-main;
+  margin: 0;
+}
