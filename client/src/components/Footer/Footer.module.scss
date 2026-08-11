@@ -1,0 +1,11 @@
+@use '../../styles/variables' as *;
+
+.websiteLayoutFooterDiv {
+  width: 100%;
+  background-color: $footer-background-color;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 75px;
+}
+

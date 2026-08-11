@@ -1,0 +1,97 @@
+@use '../../styles/variables' as *;
+
+.websiteLayoutNavContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.websiteLayoutNavContainer nav{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.websiteLayoutNavContainer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.websiteLayoutNavContainer li {
+  margin: 0px 50px;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.websiteLayoutNavContainer a {
+  text-decoration: none;
+  color: $header-text-color;
+  font-family: $font-main;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.active{
+  transition: all 0.4s ease-in-out;
+  color: $header-active-page-text-color !important;
+  font-weight: 700;
+}
+
+.footerNavContainerDiv ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.footerNavContainerDiv ul li{
+  margin-bottom: 15px !important;
+}
+
+.footerNavContainerDiv a {
+  text-decoration: none;
+  color: $footer-text-color;
+  font-family: $font-main;
+  font-size: 20px;
+}
+
+.websiteLayoutWhatsappButton {
+  margin-left: 50px;
+  width: 200px;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: $whatsapp-green-color;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.websiteLayoutWhatsappButton div{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.websiteLayoutWhatsappButton img{
+  height: 50px;
+}
+
+.websiteLayoutWhatsappButton span {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: $font-main;
+  font-weight: 600;
+  color: $footer-text-color;
+}

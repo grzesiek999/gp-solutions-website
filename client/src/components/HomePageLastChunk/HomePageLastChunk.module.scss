@@ -1,0 +1,77 @@
+@use '../../styles/variables' as *;
+
+.homePageLastChunkDiv{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 125px 40px 125px;
+  background-color: #00101F;
+}
+
+.homePageLastChunkPart1 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.homePageLastChunkPart2 {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePageLastChunkPart1 span{
+  box-sizing: border-box;
+  display: flex;
+  font-family: $home-page-banner-font;
+  color: $footer-text-color;
+}
+
+.homePageLastChunkPart1MainSpan {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.homePageLastChunkPart1SecondarySpan {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.homePageLastChunkContactButton {
+  width: 325px;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: $home-page-button-blue;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.homePageLastChunkContactButton div{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+}
+
+.homePageLastChunkContactButton img{
+  height: 30px;
+  margin-right: 10px;
+}
+
+.homePageLastChunkContactButtonSpan {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  color: $footer-text-color;
+  font-family: $home-page-banner-font;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+}

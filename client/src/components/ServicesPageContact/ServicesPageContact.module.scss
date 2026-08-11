@@ -1,0 +1,58 @@
+@use '../../styles/variables' as *;
+
+.servicesPageContactDiv {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 150px;
+  background-color: #082B5A;
+}
+
+.servicesPageContactDiv img{
+  height: 100px;
+  margin-right: 35px;
+}
+
+.servicesPageContactInfoDiv {
+  height: 75px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.servicesPageContactDiv span{
+  font-size: 26px;
+  font-family: $home-page-banner-font;
+  font-weight: 600;
+  color: $footer-text-color;
+}
+
+.servicesPageContactDiv p{
+  font-family: $home-page-banner-font;
+  font-weight: 400;
+  color: $footer-text-color;
+  font-size: 22px;
+  margin: 0;
+}
+
+.servicesPageContactInfoButton {
+  margin-left: auto;
+  width: 280px;
+  height: 75px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $home-page-button-blue;
+  color: $footer-text-color;
+  font-family: $home-page-banner-font;
+  font-weight: 600;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

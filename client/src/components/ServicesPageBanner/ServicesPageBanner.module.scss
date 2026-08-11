@@ -1,0 +1,40 @@
+@use '../../styles/variables' as *;
+
+.servicesPageBannerDiv {
+  box-sizing: border-box;
+  height: 799px;
+  background-image: url("src/assets/images/services_page_photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
+  -webkit-box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
+  -moz-box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
+}
+
+.servicesPageBannerContent {
+  padding: 100px 0 0 75px;
+  height: 100%;
+  box-sizing: border-box;
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.servicesPageBannerContent span{
+  display: flex;
+  color: $footer-text-color;
+  font-family: $home-page-banner-font;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 104px;
+}
+
+.servicesPageBannerContent p{
+  margin: 40px 0 50px 0;
+  color: $footer-text-color;
+  font-family: $home-page-banner-font;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 54px;
+}
