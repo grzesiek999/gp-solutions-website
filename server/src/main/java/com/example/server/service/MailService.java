@@ -21,11 +21,13 @@ public class MailService {
     public void sendContactEmail(ContactRequest request) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(toAddress);
-        message.setSubject("New contact form message from " + request.getName());
+        message.setSubject("GP IT Soloutions wiadomość z formularza kontaktowego");
         message.setText(
-                "Name: " + request.getName() + "\n" +
+                "Imię i nazwisko: " + request.getFull_name() + "\n" +
+                "Nazwa firmy: " + request.getCompany() + "\n" +
+                "Telefon: " + request.getPhone() + "\n" +
                         "Email: " + request.getEmail() + "\n\n" +
-                        request.getMessage()
+                        "Wiadomość: \n\n" + request.getMessage()
         );
         message.setReplyTo(request.getEmail());
         mailSender.send(message);
