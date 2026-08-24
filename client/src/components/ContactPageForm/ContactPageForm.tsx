@@ -32,7 +32,7 @@ const ContactPageForm = () => {
         setStatus("sending")
 
         try {
-            const response = await fetch('api/contacts', {
+            const response = await fetch('http://localhost:8080/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

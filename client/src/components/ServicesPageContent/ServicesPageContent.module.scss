@@ -4,5 +4,35 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 50px 75px;
+  padding: 50px 100px;
+}
+
+.servicesPageContentDiv ul{
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.servicesPageContentDiv li{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  background-color: $services-page-content-li-background;
+  padding: 25px 100px;
+  border-radius: 12px;
+}
+
+.servicesPageContentDiv li:last-child{
+  margin-bottom: 0 !important;
+}
+
+.servicesPageContentDiv img{
+  margin-top: 40px;
+  width: 150px;
+  height: 150px;
 }
