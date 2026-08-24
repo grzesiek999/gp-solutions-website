@@ -1,6 +1,5 @@
 import {Link, useLocation} from "react-router-dom";
 import styles from "./WebsiteNav.module.scss";
-import Button from "../Button/Button.tsx";
 
 const NAV_ITEMS = [
     { label: "Strona główna", path: "/" },
@@ -11,13 +10,6 @@ const NAV_ITEMS = [
 
 const WebsiteNavHeader = () => {
     const {pathname} = useLocation();
-
-    const WhatsappButtonFunc = () =>{
-        const phoneNumber = "48608158611";
-        const message = encodeURIComponent("Dzień dobry, chciałbym zapytać o ofertę.");
-
-        window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
-    }
 
     return (
         <div className={styles.websiteLayoutNavContainer}>
@@ -30,16 +22,6 @@ const WebsiteNavHeader = () => {
                     ))}
                 </ul>
             </nav>
-            <Button
-                onClick={WhatsappButtonFunc}
-                type={'button'}
-                className={styles.websiteLayoutWhatsappButton}
-            >
-                <div>
-                    <img src='src/assets/icons/whatsapp-icon.png' alt="whatsapp-icon" />
-                    <span className={''}>WhatsApp</span>
-                </div>
-            </Button>
         </div>
     )
 }

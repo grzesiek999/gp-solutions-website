@@ -4,6 +4,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  margin-left: auto;
 }
 
 .websiteLayoutNavContainer nav{
@@ -60,38 +61,4 @@
   color: $footer-text-color;
   font-family: $font-main;
   font-size: 20px;
-}
-
-.websiteLayoutWhatsappButton {
-  margin-left: 50px;
-  width: 200px;
-  height: 60px;
-  box-sizing: border-box;
-  background-color: $whatsapp-green-color;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.websiteLayoutWhatsappButton div{
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.websiteLayoutWhatsappButton img{
-  height: 50px;
-}
-
-.websiteLayoutWhatsappButton span {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-family: $font-main;
-  font-weight: 600;
-  color: $footer-text-color;
 }
