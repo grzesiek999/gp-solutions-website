@@ -1,12 +1,17 @@
 @use '../../styles/variables' as *;
 
 .homePageLastChunkDiv{
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 50px 125px 40px 125px;
   background-color: #00101F;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 50px 75px 40px 75px;
+  }
 }
 
 .homePageLastChunkPart1 {
@@ -33,6 +38,10 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 56px;
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 52px;
+  }
 }
 
 .homePageLastChunkPart1SecondarySpan {
@@ -42,6 +51,7 @@
 }
 
 .homePageLastChunkContactButton {
+  margin: 0;
   width: 325px;
   height: 80px;
   box-sizing: border-box;
@@ -49,6 +59,10 @@
   border: none;
   border-radius: 12px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 40px 0 0 0;
+  }
 }
 
 .homePageLastChunkContactButton div{

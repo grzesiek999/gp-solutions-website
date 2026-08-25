@@ -68,7 +68,7 @@ header {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 35px 35px 0 35px;
+  padding: 35px 35px 25px 35px;
   border-bottom: 1px solid $header-border-color;
   background-color: $header-background-color;
 }
@@ -89,15 +89,10 @@ header {
   }
 }
 
-.menuIconDiv {
-  margin-top: 30px;
-  box-sizing: border-box;
-}
-
 .mobileWebsiteLayoutWhatsappButton {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
+  margin-top: 25px;
   width: 300px;
   height: 70px;
   box-sizing: border-box;

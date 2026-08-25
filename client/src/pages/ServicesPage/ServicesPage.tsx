@@ -5,11 +5,11 @@ import ServicesPageContact from "../../components/ServicesPageContact/ServicesPa
 
 const ServicesPage = () => {
     return (
-        <main>
+        <>
             <ServicesPageBanner />
             <ServicesPageContent />
             <ServicesPageContact />
-        </main>
+        </>
     )
 }
 

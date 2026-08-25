@@ -1,3 +1,4 @@
+import {useMedia} from "use-media";
 
 type ContactDataListProps = {
     containerClassName?: string;
@@ -14,9 +15,12 @@ const ContactDataList = ({
                              imgClassName,
                              workHoursLiDivClassName,
 }: ContactDataListProps) => {
+
+    const isMobile = useMedia({ maxWidth: 768 });
+
     return (
         <div className={containerClassName}>
-            <span className={titleSpanClassName}>Dane kontaktowe</span>
+            {isMobile ? null : <span className={titleSpanClassName}>Dane kontaktowe</span>}
             <ul>
                 <li>
                     <img

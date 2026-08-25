@@ -5,11 +5,11 @@ import HomePageLastChunk from "../../components/HomePageLastChunk/HomePageLastCh
 
 const HomePage = () => {
     return (
-        <main>
+        <>
             <HomePageBanner />
             <HomePageContent />
             <HomePageLastChunk />
-        </main>
+        </>
     )
 }
 

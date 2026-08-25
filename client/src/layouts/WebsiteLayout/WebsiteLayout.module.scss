@@ -1,0 +1,12 @@
+@use '../../styles/variables' as *;
+
+
+@media (max-width: 768px) {
+  .isOpenMenu {
+    padding-top: 550px;
+  }
+
+  .isCloseMenu {
+    padding-top: 110px;
+  }
+}

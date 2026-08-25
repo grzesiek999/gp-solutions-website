@@ -2,15 +2,20 @@ import styles from "./FooterInformation.module.scss";
 import CompanyLogo from "../CompanyLogo/CompanyLogo.tsx";
 import {WebsiteNavFooter} from "../WebsiteNav/WebsiteNav.tsx";
 import ContactDataList from "../ContactDataList/ContactDataList.tsx";
+import {useMedia} from "use-media";
 
 const FooterInformation = () => {
+
+    const isMobile = useMedia({ maxWidth: 768 });
+
     return (
         <div className={styles.footerInformationDiv}>
             <div className={styles.footerInformationChunk}>
                 <CompanyLogo className={styles.websiteFooterLogo} path={'src/assets/icons/gp-solutions-white.png'} />
+                {isMobile ? null:
                 <span className={styles.footerSpanType1}>
                     Kompleksowa opieka IT dla firm. Bezpieczeństwo, niezawodność i wsparcie na którym możesz polegać.
-                </span>
+                </span>}
             </div>
             <ContactDataList
                 containerClassName={styles.footerInformationChunk}
