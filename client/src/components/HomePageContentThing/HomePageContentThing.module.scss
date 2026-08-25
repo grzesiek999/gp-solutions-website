@@ -7,17 +7,27 @@
   align-items: center;
   width: 23%;
   padding: 40px 30px 15px 30px;
+  margin: 0;
   border-radius: 24px;
   box-shadow: -5px 10px 16px 2px $home-page-content-thing-shadov;
   -webkit-box-shadow: -5px 10px 16px 2px $home-page-content-thing-shadov;
   -moz-box-shadow: -5px 10px 16px 2px $home-page-content-thing-shadov;
   border: 1px solid $home-page-content-thing-border;
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-bottom: 50px;
+  }
 }
 
 .homePageContentThingDiv img {
   height: 150px;
   width: 150px;
   margin-bottom: 30px;
+  @media (max-width: 768px) {
+    height: 125px;
+    width: 125px;
+    margin-bottom: 25px;
+  }
 }
 
 .homePageContentThingDiv span {
@@ -28,6 +38,10 @@
   letter-spacing: 1px;
   color: $header-text-color;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .homePageContentThingDiv p {
@@ -39,6 +53,10 @@
   letter-spacing: 1px;
   color: $header-text-color;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    line-height: 38px;
+  }
 }
 
 .homePageContentThingDiv a {
@@ -51,4 +69,7 @@
   color: $home-page-button-blue;
   text-align: center;
   text-decoration: none;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }

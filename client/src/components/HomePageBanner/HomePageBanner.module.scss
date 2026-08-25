@@ -5,6 +5,8 @@
   width: 100%;
   height: 880px;
   background-image: url("src/assets/images/home_page_photo.png");
+  background-size: cover;
+  background-position: center;
   box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
   -webkit-box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
   -moz-box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
@@ -15,7 +17,8 @@
   box-sizing: border-box;
   width: 740px;
   @media (max-width: 768px) {
-    width: auto;
+    width: 500px;
+    padding: 160px 0 0 35px;
   }
 }
 
@@ -26,6 +29,10 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 104px;
+  @media (max-width: 768px) {
+    font-size: 52px;
+    line-height: 68px;
+  }
 }
 
 .hamePageBannerContent p{
@@ -35,13 +42,22 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 54px;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 48px;
+  }
 }
 
 .homePageBannerButtonsDiv {
+  margin: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 70px 0 0 0;
+  }
 }
 
 .homePageBannerButtonsSpan {
@@ -52,6 +68,11 @@
   font-weight: 600 !important;
   font-size: 28px !important;
   line-height: 30px !important;
+  @media (max-width: 768px) {
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    line-height: 24px !important;
+  }
 }
 
 .homePageBannerContactButton {
@@ -62,43 +83,45 @@
   border: none;
   border-radius: 12px;
   cursor: pointer;
-}
-
-.homePageBannerContactButton div{
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 15px;
-}
-
-.homePageBannerContactButton img{
-  height: 30px;
-  margin-right: 10px;
+  @media (max-width: 768px) {
+    width: 210px;
+    height: 75px;
+  }
 }
 
 .homePageBannerCheckServicesButton {
   width: 325px;
   height: 80px;
   box-sizing: border-box;
-  background-color: #010917;
+  background-color: $home-page-banner-button-background;
   opacity: 0.9;
   border: 2px solid $footer-text-color;
   border-radius: 12px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    width: 225px;
+    height: 75px;
+  }
 }
 
-.homePageBannerCheckServicesButton div{
+.homePageBannerButtonDiv{
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 15px;
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 }
 
-.homePageBannerCheckServicesButton img{
+.homePageBannerButtonImg{
   height: 30px;
+  width: auto;
   margin-right: 10px;
+  @media (max-width: 768px) {
+    height: 25px;
+    margin-right: 5px;
+  }
 }
