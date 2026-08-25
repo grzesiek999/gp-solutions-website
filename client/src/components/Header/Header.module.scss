@@ -62,3 +62,70 @@ header {
   font-weight: 600;
   color: $footer-text-color;
 }
+
+.mobileWebsiteLayoutHeaderDiv {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 35px 0 35px;
+  border-bottom: 1px solid $header-border-color;
+  background-color: $header-background-color;
+}
+
+.mobileWebsiteLayoutHeaderDivPart1 {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobileWebsiteLayoutLogo {
+  width: 400px;
+  height: auto;
+  @media (max-width: 400px) {
+    width: 200px;
+  }
+}
+
+.menuIconDiv {
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.mobileWebsiteLayoutWhatsappButton {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 70px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: $whatsapp-green-color;
+}
+
+.mobileWebsiteLayoutWhatsappButton div{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mobileWebsiteLayoutWhatsappButton img{
+  height: 70px;
+}
+
+.mobileWebsiteLayoutWhatsappButton span {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-family: $font-main;
+  font-weight: 600;
+  color: $footer-text-color;
+}
