@@ -84,8 +84,8 @@ header {
 .mobileWebsiteLayoutLogo {
   width: 400px;
   height: auto;
-  @media (max-width: 400px) {
-    width: 200px;
+  @media (max-width: 768px) {
+    width: clamp(250px, 66vw,400px);
   }
 }
 

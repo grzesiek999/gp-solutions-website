@@ -20,16 +20,16 @@ const HomePageContent = () => {
                                     content={'Chronimy Twoje dane i infrastrukturę przed zagrożeniami.'}
                                 />
                                 <HomePageContentThing
-                                    img_name={'backup-icon'}
-                                    title={'Backup danych'}
-                                    content={'Regularne kopie zapasowe to pewność i spokój dla Twojej firmy.'}
+                                    img_name={'quick-reaction-icon'}
+                                    title={'Szybka reakcja'}
+                                    content={'Reagujemy szybko i skutecznie - kiedy nas potrzebujesz.'}
                                 />
                             </div>
                             <div className={styles.mobileHomePageContentMainPartThingsContainerDiv}>
                                 <HomePageContentThing
-                                    img_name={'quick-reaction-icon'}
-                                    title={'Szybka reakcja'}
-                                    content={'Reagujemy szybko i skutecznie - kiedy nas potrzebujesz.'}
+                                    img_name={'backup-icon'}
+                                    title={'Backup danych'}
+                                    content={'Regularne kopie zapasowe to pewność i spokój dla Twojej firmy.'}
                                 />
                                 <HomePageContentThing
                                     img_name={'const-it-care'}
