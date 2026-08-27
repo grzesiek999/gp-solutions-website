@@ -27,6 +27,14 @@ header {
 .websiteLayoutLogo {
   box-sizing: border-box;
   width: 400px;
+  height: auto;
+  @media (max-width: 768px) {
+    height: 52px;
+    width: clamp(200px, 60vw,400px);
+  }
+  @media (max-width: 500px) {
+    height: auto;
+  }
 }
 
 .websiteLayoutWhatsappButton {
@@ -71,6 +79,9 @@ header {
   padding: 35px 35px 25px 35px;
   border-bottom: 1px solid $header-border-color;
   background-color: $header-background-color;
+  @media (max-width: 500px) {
+    padding: 25px 20px 15px 20px;
+  }
 }
 
 .mobileWebsiteLayoutHeaderDivPart1 {
@@ -81,25 +92,29 @@ header {
   justify-content: space-between;
 }
 
-.mobileWebsiteLayoutLogo {
-  width: 400px;
-  height: auto;
-  @media (max-width: 768px) {
-    width: clamp(250px, 66vw,400px);
-  }
+.mobileWebsiteLayoutHeaderDivPart1 a, a div{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .mobileWebsiteLayoutWhatsappButton {
   margin-left: auto;
   margin-right: auto;
-  margin-top: clamp(15px, 4vw,25px);
-  width: clamp(200px, 55vw, 300px);
-  height: clamp(60px, 16vw, 70px);
+  margin-top: 25px;
+  width: 300px;
+  height: 70px;
   box-sizing: border-box;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   background-color: $whatsapp-green-color;
+  @media (max-width: 500px) {
+    margin-top: 15px;
+    width: 230px;
+    height: 55px;
+    border-radius: 8px;
+  }
 }
 
 .mobileWebsiteLayoutWhatsappButton div{
@@ -111,16 +126,22 @@ header {
 }
 
 .mobileWebsiteLayoutWhatsappButton img{
-  height: clamp(60px, 16vw, 70px);
+  height: 70px;
+  @media (max-width: 500px) {
+    height: 55px;
+  }
 }
 
 .mobileWebsiteLayoutWhatsappButton span {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  font-size: clamp(22px, 5vw, 26px);
+  font-size: 26px;
   letter-spacing: 1px;
   font-family: $font-main;
   font-weight: 600;
   color: $footer-text-color;
+  @media (max-width: 500px) {
+    font-size: 22px;
+  }
 }

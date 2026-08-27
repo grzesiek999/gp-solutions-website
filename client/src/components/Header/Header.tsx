@@ -25,7 +25,7 @@ const Header = ({ isOpen, setOpen }: HeaderProps) => {
             {isMobile ?
             <div className={styles.mobileWebsiteLayoutHeaderDiv}>
                 <div className={styles.mobileWebsiteLayoutHeaderDivPart1}>
-                    <Link to={'/'}><CompanyLogo className={styles.mobileWebsiteLayoutLogo} path={`src/assets/icons/gp-solutions-blue.png`}/></Link>
+                    <Link to={'/'}><CompanyLogo className={styles.websiteLayoutLogo} path={`src/assets/icons/gp-solutions-blue.png`}/></Link>
                     <Hamburger
                         toggled={isOpen}
                         toggle={setOpen}

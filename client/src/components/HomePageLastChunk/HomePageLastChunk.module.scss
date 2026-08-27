@@ -12,6 +12,9 @@
     flex-direction: column;
     padding: 50px 35px 40px 35px;
   }
+  @media (max-width: 500px) {
+    padding: 25px 15px 20px 15px;
+  }
 }
 
 .homePageLastChunkPart1 {
@@ -36,11 +39,15 @@
 
 .homePageLastChunkPart1MainSpan {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 56px;
   @media (max-width: 768px) {
-    font-size: 36px;
-    line-height: 52px;
+    font-size: clamp(22px, 5vw, 36px);
+    line-height: clamp(38px, 6vw, 52px);
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    line-height: 38px;
   }
 }
 
@@ -48,6 +55,14 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
+  @media (max-width: 768px) {
+    font-size: clamp(20px, 4vw, 24px);
+    line-height: clamp(36px, 5vw, 40px);
+  }
+  @media (max-width: 500px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .homePageLastChunkContactButton {
@@ -62,6 +77,12 @@
   @media (max-width: 768px) {
     width: 100%;
     margin: 40px 0 0 0;
+    height: clamp(60px, 12vw, 80px);
+  }
+  @media (max-width: 500px) {
+    margin: 25px 0 0 0;
+    height: 50px;
+    border-radius: 8px;
   }
 }
 
@@ -72,11 +93,20 @@
   flex-direction: row;
   justify-content: center;
   padding: 15px;
+  @media (max-width: 500px) {
+    padding: 10px;
+  }
 }
 
 .homePageLastChunkContactButton img{
   height: 30px;
   margin-right: 10px;
+  @media (max-width: 768px) {
+    height: clamp(26px, 5vw, 30px);
+  }
+  @media (max-width: 500px) {
+    height: 22px;
+  }
 }
 
 .homePageLastChunkContactButtonSpan {
@@ -88,4 +118,12 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 30px;
+  @media (max-width: 768px) {
+    font-size: clamp(24px, 4vw, 28px);
+    line-height: clamp(26px, 5vw, 30px);
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

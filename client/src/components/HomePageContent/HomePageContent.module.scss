@@ -31,10 +31,10 @@
   font-weight: 600;
   color: $header-text-color;
   @media (max-width: 768px) {
-    font-size: 42px;
+    font-size: clamp(30px, 6vw, 44px);
   }
   @media (max-width: 500px) {
-    font-size: 22px;
+    font-size: clamp(24px, 6vw, 30px);
   }
 }
 
