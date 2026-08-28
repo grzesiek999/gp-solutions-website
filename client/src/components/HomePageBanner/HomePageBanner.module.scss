@@ -16,6 +16,9 @@
   @media (max-width: 500px) {
     height: 600px;
   }
+  @media (max-width: 280px) {
+    height: 700px;
+  }
 }
 
 .hamePageBannerContent {
@@ -29,7 +32,11 @@
   }
   @media (max-width: 500px) {
     width: 280px;
-    padding: 100px 0 0 20px;
+    padding: 40px 0 0 20px;
+  }
+  @media (max-width: 280px) {
+    width: 100%;
+    padding: 40px 0 0 20px;
   }
 }
 
@@ -64,7 +71,7 @@
   @media (max-width: 500px) {
     font-size: 20px;
     line-height: 34px;
-    margin: 25px 0 30px 0;
+    margin: 20px 0 25px 0;
   }
 }
 
@@ -79,7 +86,11 @@
     margin: 70px 0 0 0;
   }
   @media (max-width: 500px) {
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
+    flex-direction: column;
+    height: 180px;
+    width: fit-content;
+    align-items: center;
   }
 }
 
@@ -96,11 +107,6 @@
     font-size: 20px !important;
     line-height: 22px !important;
   }
-  @media (max-width: 500px) {
-    font-weight: 500 !important;
-    font-size: 16px !important;
-    line-height: 18px !important;
-  }
 }
 
 .homePageBannerContactButton {
@@ -114,11 +120,6 @@
   @media (max-width: 768px) {
     width: clamp(190px, 30vw, 210px);
     height: 75px;
-  }
-  @media (max-width: 500px) {
-    width: 122px;
-    height: 60px;
-    border-radius: 8px;
   }
 }
 
@@ -135,11 +136,6 @@
     width: clamp(195px, 32vw, 225px);
     height: 75px;
   }
-  @media (max-width: 500px) {
-    width: 128px;
-    height: 60px;
-    border-radius: 8px;
-  }
 }
 
 .homePageBannerButtonDiv{
@@ -153,9 +149,6 @@
   @media (max-width: 768px) {
     padding: 10px;
   }
-  @media (max-width: 500px) {
-    padding: 5px;
-  }
 }
 
 .homePageBannerButtonImg{
@@ -165,8 +158,5 @@
   @media (max-width: 768px) {
     height: 25px;
     margin-right: 5px;
-  }
-  @media (max-width: 500px) {
-    height: 30px;
   }
 }
