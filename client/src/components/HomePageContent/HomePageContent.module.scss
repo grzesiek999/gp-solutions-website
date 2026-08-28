@@ -27,7 +27,7 @@
   justify-content: center;
   margin: 50px 0 40px 0;
   font-family: $home-page-banner-font;
-  font-size: 56px;
+  font-size: clamp(44px, 3vw, 56px);
   font-weight: 600;
   text-align: center;
   color: $header-text-color;

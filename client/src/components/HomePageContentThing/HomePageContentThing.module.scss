@@ -24,8 +24,8 @@
 }
 
 .homePageContentThingDiv img {
-  height: 150px;
-  width: 150px;
+  height: clamp(125px, 9vw, 150px);
+  width: clamp(125px, 9vw, 150px);
   margin-bottom: 30px;
   @media (max-width: 768px) {
     height: clamp(100px, 20vw, 125px);
@@ -39,9 +39,9 @@
 
 .homePageContentThingDiv span {
   font-family: $home-page-banner-font;
-  font-size: 28px;
   font-weight: 600;
-  line-height: 34px;
+  font-size: clamp(20px, 1.5vw, 28px);
+  line-height: clamp(28px, 1.5vw, 34px);
   letter-spacing: 1px;
   color: $header-text-color;
   text-align: center;
@@ -54,9 +54,9 @@
 .homePageContentThingDiv p {
   margin: 25px 0;
   font-family: $home-page-banner-font;
-  font-size: 24px;
+  font-size: clamp(20px, 1.5vw, 24px);
+  line-height: clamp(34px, 2vw, 38px);
   font-weight: 400;
-  line-height: 42px;
   letter-spacing: 1px;
   color: $header-text-color;
   text-align: center;
@@ -71,7 +71,7 @@
   margin-top: auto;
   margin-bottom: 25px;
   font-family: $home-page-banner-font;
-  font-size: 24px;
+  font-size: clamp(20px, 1.5vw, 24px);
   font-weight: 600;
   letter-spacing: 1px;
   color: $home-page-button-blue;

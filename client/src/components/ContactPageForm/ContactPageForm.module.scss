@@ -68,12 +68,12 @@
 .contactPageFormDiv form button span{
   font-family: $font-main;
   font-weight: 400;
-  font-size: 26px;
+  font-size: clamp(24px, 1.8vw, 26px);
   color: $footer-text-color
 }
 
 .contactPageFormDiv form button img{
-  width: 40px;
+  width: clamp(36px, 2.5vw, 40px);
   margin-left: auto;
 }
 
