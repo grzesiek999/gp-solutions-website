@@ -26,8 +26,8 @@ header {
 
 .websiteLayoutLogo {
   box-sizing: border-box;
-  width: 400px;
-  height: auto;
+  width: clamp(350px, 25vw, 400px);
+  height: 55px;
   @media (max-width: 768px) {
     height: 52px;
     width: clamp(200px, 60vw,400px);
@@ -41,9 +41,9 @@ header {
 }
 
 .websiteLayoutWhatsappButton {
-  margin-left: 50px;
+  margin-left: clamp(30px, 2.5vw, 50px);;
   width: 200px;
-  height: 60px;
+  height: clamp(55px, 4vw, 60px);
   box-sizing: border-box;
   background-color: $whatsapp-green-color;
   border: none;

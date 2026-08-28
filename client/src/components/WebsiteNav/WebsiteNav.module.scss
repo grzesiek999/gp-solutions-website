@@ -43,7 +43,9 @@
 }
 
 .websiteLayoutNavContainer li {
-  margin: 0px 50px;
+  display: flex;
+  align-items: center;
+  margin: 0 clamp(30px, 2.5vw, 50px);
   transition: all 0.4s ease-in-out;
   &:hover {
     scale: 1.1;
@@ -67,8 +69,9 @@
   text-decoration: none;
   color: $header-text-color;
   font-family: $font-main;
-  font-size: 24px;
+  font-size: clamp(20px, 1.5vw, 24px);
   font-weight: 600;
+  text-align: center;
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
