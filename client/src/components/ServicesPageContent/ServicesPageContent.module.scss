@@ -37,6 +37,9 @@
   @media (max-width: 500px) {
     padding: 25px 15px;
   }
+  @media (max-width: 370px) {
+    flex-direction: column;
+  }
 }
 
 .servicesPageContentDiv li:last-child{
@@ -50,5 +53,8 @@
   @media (max-width: 768px) {
     height: clamp(100px, 20vw, 125px);
     width: clamp(100px, 20vw, 125px);
+  }
+  @media (max-width: 370px) {
+    margin: 0 auto 0 auto;
   }
 }
