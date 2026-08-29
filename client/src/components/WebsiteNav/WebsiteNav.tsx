@@ -8,7 +8,11 @@ const NAV_ITEMS = [
     { label: "Kontakt", path: "/contact" }
 ];
 
-const WebsiteNavHeader = () => {
+type WebsiteNavHeaderProps = {
+    setOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const WebsiteNavHeader = ({ setOpen }: WebsiteNavHeaderProps) => {
     const {pathname} = useLocation();
 
     return (
@@ -17,7 +21,11 @@ const WebsiteNavHeader = () => {
                 <ul>
                     {NAV_ITEMS.map((item) => (
                         <li>
-                            <Link to={item.path} className={pathname === item.path ? `${styles.active}` : ""}>{item.label}</Link>
+                            <Link
+                                to={item.path}
+                                onClick={()=>{if(setOpen)setOpen(false);}}
+                                className={pathname === item.path ? `${styles.active}` : ""}
+                            >{item.label}</Link>
                         </li>
                     ))}
                 </ul>

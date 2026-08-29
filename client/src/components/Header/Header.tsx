@@ -34,7 +34,7 @@ const Header = ({ isOpen, setOpen }: HeaderProps) => {
                 </div>
                 {isOpen?
                     <>
-                        <WebsiteNavHeader/>
+                        <WebsiteNavHeader setOpen={setOpen}/>
                         <Button
                             onClick={WhatsappButtonFunc}
                             type={'button'}
@@ -50,7 +50,7 @@ const Header = ({ isOpen, setOpen }: HeaderProps) => {
             </div>:
             <div className={`${styles.websiteLayoutHeaderDiv}`}>
                 <Link to={'/'}><CompanyLogo className={styles.websiteLayoutLogo} path={`src/assets/icons/gp-solutions-blue.png`}/></Link>
-                <WebsiteNavHeader />
+                <WebsiteNavHeader/>
                 <Button
                     onClick={WhatsappButtonFunc}
                     type={'button'}
