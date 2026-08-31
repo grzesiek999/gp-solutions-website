@@ -7,12 +7,23 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 50px 75px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 50px 35px 50px 35px;
+  }
+  @media (max-width: 500px) {
+    padding: 50px 20px 50px 20px;
+  }
 }
 
 .contactDataContainer {
   box-sizing: border-box;
   width: 40%;
   padding: 50px 0 0 100px;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .contactDataContainer ul{
@@ -24,10 +35,15 @@
 }
 
 .contactDataContainer  ul li{
-  margin: 0;
   display: flex;
   flex-direction: row;
   margin-bottom: 35px;
+  @media (max-width: 450px) {
+    margin-bottom: 25px;
+  }
+  @media (max-width: 300px) {
+    margin-bottom: 20px;
+  }
 }
 
 .contactDataContainer ul li:last-child{
@@ -42,6 +58,16 @@
   font-size: 32px;
   font-weight: 600;
   font-family: $font-main;
+  @media (max-width: 768px) {
+    margin-top: 75px;
+  }
+  @media (max-width: 450px) {
+    font-size: 26px;
+  }
+  @media (max-width: 300px) {
+    font-size: 22px;
+    margin: 45px 0 30px 0;
+  }
 }
 
 .contactDataSpan {
@@ -51,17 +77,42 @@
   color: $header-text-color;
   font-size: 26px;
   font-family: $font-main;
+  @media (max-width: 450px) {
+    font-size: 20px;
+  }
+  @media (max-width: 300px) {
+    font-size: 16px;
+  }
 }
 
 .contactDataImg{
   margin-right: 35px;
   width: 60px;
   height: 60px;
+  @media (max-width: 450px) {
+    margin-right: 25px;
+    width: 45px;
+    height: 45px;
+  }
+  @media (max-width: 300px) {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .workHoursDiv .contactDataSpan{
   margin: 20px 0;
   font-weight: 600 !important;
+  @media (max-width: 768px) {
+    margin-top: 15px;
+  }
+  @media (max-width: 450px) {
+    margin-top: 10px;
+  }
+  @media (max-width: 300px) {
+    margin-top: 5px;
+  }
 }
 
 .workHoursDiv p{
@@ -69,4 +120,7 @@
   color: $header-text-color;
   font-size: 26px;
   font-family: $font-main;
+  @media (max-width: 450px) {
+    font-size: 20px;
+  }
 }

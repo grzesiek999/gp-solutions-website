@@ -124,6 +124,9 @@
 .aboutUsPageContentSecondPartDiv ul li img{
   width: 90px;
   margin-right: 50px;
+  @media (max-width: 500px) {
+    margin-right: 30px;
+  }
   @media (max-width: 350px) {
     margin: 0 auto 0 auto;
   }

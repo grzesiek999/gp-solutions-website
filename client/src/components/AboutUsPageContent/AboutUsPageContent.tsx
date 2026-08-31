@@ -21,11 +21,11 @@ const Part1 = (
 
 const AboutUsPageContent = () => {
 
-    const flex_point = useMedia({maxWidth: 768});
+    const isMobile = useMedia({maxWidth: 768});
 
     return (
         <>
-            {flex_point?
+            {isMobile?
                 <div className={styles.aboutUsPageContentMainDiv}>
                     <div className={styles.aboutUsPageContentLogoDiv}>
                         <img src={'src/assets/icons/short-logo-icon.png'} alt='short logo icon error' />
