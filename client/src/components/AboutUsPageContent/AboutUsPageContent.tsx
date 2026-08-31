@@ -21,7 +21,7 @@ const Part1 = (
 
 const AboutUsPageContent = () => {
 
-    const flex_point = useMedia({maxWidth: 500});
+    const flex_point = useMedia({maxWidth: 768});
 
     return (
         <>

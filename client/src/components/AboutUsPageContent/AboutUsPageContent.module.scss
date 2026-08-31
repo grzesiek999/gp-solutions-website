@@ -7,11 +7,11 @@
   display: flex;
   flex-direction: row;
   @media (max-width: 768px) {
-    padding: 50px 35px;
+    flex-direction: column;
+    padding: 0 35px 50px 35px;
   }
   @media (max-width: 500px) {
-    padding: 50px 20px;
-    flex-direction: column;
+    padding: 0 20px 50px 20px;
   }
 }
 
@@ -20,6 +20,9 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .aboutUsPageContentLogoDiv {
@@ -27,10 +30,19 @@
   width: 50%;
   display: flex;
   justify-content: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .aboutUsPageContentLogoDiv img {
-  height: 300px;
+  height: 30vw;
+  @media (max-width: 768px) {
+    height: 50vw;
+  }
+  @media (max-width: 500px) {
+    height: 70vw;
+  }
 }
 
 .aboutUsPageContentFirstPartDiv{
@@ -45,6 +57,15 @@
   font-weight: 600;
   font-family: $font-main;
   margin-bottom: 30px;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+  @media (max-width: 400px) {
+    font-size: 30px;
+  }
 }
 
 .aboutUsPageContentFirstPartDiv p{
@@ -53,6 +74,15 @@
   font-family: $font-main;
   line-height: 44px;
   margin: 0 0 30px 0;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
+  @media (max-width: 400px) {
+    font-size: 20px;
+  }
 }
 
 .aboutUsPageContentSecondPartDiv{
@@ -75,6 +105,9 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
+  @media (max-width: 350px) {
+    flex-direction: column;
+  }
 }
 
 .aboutUsPageContentSecondPartDiv ul li:last-child{
@@ -91,6 +124,9 @@
 .aboutUsPageContentSecondPartDiv ul li img{
   width: 90px;
   margin-right: 50px;
+  @media (max-width: 350px) {
+    margin: 0 auto 0 auto;
+  }
 }
 
 .aboutUsPageContentSecondPartDiv ul li span{
@@ -98,6 +134,13 @@
   font-size: 26px;
   font-weight: 600;
   font-family: $font-main;
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
+  @media (max-width: 350px) {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 
 .aboutUsPageContentSecondPartDiv ul li p{
@@ -105,4 +148,10 @@
   font-weight: 400;
   font-family: $font-main;
   margin: 0;
+  @media (max-width: 400px) {
+    font-size: 20px;
+  }
+  @media (max-width: 350px) {
+    text-align: center;
+  }
 }

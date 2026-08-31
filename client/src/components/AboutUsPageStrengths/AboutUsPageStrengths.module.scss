@@ -11,7 +11,7 @@
     padding: 50px 35px;
   }
   @media (max-width: 500px) {
-    padding: 50px 20px;
+    padding: 35px 20px;
   }
 }
 
@@ -23,6 +23,9 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  @media (max-width: 350px) {
+    flex-direction: column;
+  }
 }
 
 .aboutUsPageStrengthsDiv ul li{
@@ -36,10 +39,21 @@
   @media (max-width: 768px) {
     padding-right: 15px;
   }
+  @media (max-width: 500px) {
+    padding-right: 0;
+  }
+  @media (max-width: 350px) {
+    width: 100%;
+    border: none;
+    margin-bottom: 25px;
+  }
 }
 
 .aboutUsPageStrengthsDiv ul li:last-child{
   border: none;
+  @media (max-width: 350px) {
+    margin-bottom: 0;
+  }
 }
 
 .aboutUsPageStrengthsDiv ul li:last-child, ul li:first-child{
@@ -55,8 +69,6 @@
     width: clamp(70px, 14vw, 100px);
     margin-bottom: 10px;
   }
-  @media (max-width: 500px) {
-  }
 }
 
 .aboutUsPageStrengthsDiv ul li span{
@@ -69,5 +81,9 @@
     font-size: clamp(20px, 4vw, 24px);
   }
   @media (max-width: 500px) {
+    font-size: clamp(14px, 3.8vw, 20px);
+  }
+  @media (max-width: 350px) {
+    font-size: 18px;
   }
 }
