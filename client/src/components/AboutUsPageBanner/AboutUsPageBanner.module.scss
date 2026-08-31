@@ -6,9 +6,19 @@
   background-image: url("../../assets/images/about_us_page_photo.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
   -webkit-box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
   -moz-box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
+  @media (max-width: 768px) {
+    height: 680px;
+  }
+  @media (max-width: 500px) {
+    height: 510px;
+  }
+  @media (max-width: 280px) {
+    height: 610px;
+  }
 }
 
 .aboutUsPageBannerContent {
@@ -19,6 +29,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: 768px) {
+    width: clamp(450px, 70vw, 500px);
+    padding-top: 100px;
+    padding-left: clamp(25px, 5vw,35px);
+  }
+  @media (max-width: 500px) {
+    width: 280px;
+    padding: 40px 0 0 20px;
+  }
+  @media (max-width: 280px) {
+    width: 100%;
+    padding: 40px 0 0 20px;
+  }
 }
 
 .aboutUsPageBannerContent span{
@@ -28,6 +51,14 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 104px;
+  @media (max-width: 768px) {
+    font-size: clamp(42px, 7vw, 52px);
+    line-height: clamp(56px, 8vw, 66px);;
+  }
+  @media (max-width: 500px) {
+    font-size: 30px;
+    line-height: 44px;
+  }
 }
 
 .aboutUsPageBannerContent p{
@@ -37,4 +68,13 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 54px;
+  @media (max-width: 768px) {
+    font-size: clamp(24px, 4vw, 30px);
+    line-height: 48px;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    line-height: 34px;
+    margin: 20px 0 25px 0;
+  }
 }
