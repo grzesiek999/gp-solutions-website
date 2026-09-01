@@ -22,12 +22,19 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid $header-border-color;
+  @media (max-width: 1280px) {
+    padding: 0px 35px;
+  }
 }
 
 .websiteLayoutLogo {
   box-sizing: border-box;
   width: clamp(350px, 25vw, 400px);
   height: 55px;
+  @media (max-width: 1280px) {
+    height: clamp(40px, 5vw, 50px);
+    width: clamp(160px, 20vw, 350px);
+  }
   @media (max-width: 768px) {
     height: 52px;
     width: clamp(200px, 60vw,400px);
@@ -41,14 +48,23 @@ header {
 }
 
 .websiteLayoutWhatsappButton {
+  padding: 0 15px;
   margin-left: clamp(30px, 2.5vw, 50px);;
-  width: 200px;
   height: clamp(55px, 4vw, 60px);
   box-sizing: border-box;
   background-color: $whatsapp-green-color;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  @media (max-width: 1280px) {
+    padding: 0 10px;
+    margin-left: 20px;
+    height: 50px;
+  }
+  @media (max-width: 850px) {
+    padding: 0 5px;
+    height: 45px;
+  }
 }
 
 .websiteLayoutWhatsappButton div{
@@ -61,6 +77,9 @@ header {
 
 .websiteLayoutWhatsappButton img{
   height: 50px;
+  @media (max-width: 1280px) {
+    height: clamp(35px, 3.3vw, 40px);
+  }
 }
 
 .websiteLayoutWhatsappButton span {
@@ -72,6 +91,9 @@ header {
   font-family: $font-main;
   font-weight: 600;
   color: $footer-text-color;
+  @media (max-width: 1280px) {
+    font-size: clamp(16px, 1.6vw, 20px);
+  }
 }
 
 .mobileWebsiteLayoutHeaderDiv {
