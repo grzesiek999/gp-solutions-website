@@ -1,6 +1,5 @@
 import {Link, useLocation} from "react-router-dom";
 import styles from "./WebsiteNav.module.scss";
-import Button from "../Button/Button.tsx";
 
 const NAV_ITEMS = [
     { label: "Strona główna", path: "/" },
@@ -9,15 +8,12 @@ const NAV_ITEMS = [
     { label: "Kontakt", path: "/contact" }
 ];
 
-const WebsiteNavHeader = () => {
+type WebsiteNavHeaderProps = {
+    setOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const WebsiteNavHeader = ({ setOpen }: WebsiteNavHeaderProps) => {
     const {pathname} = useLocation();
-
-    const WhatsappButtonFunc = () =>{
-        const phoneNumber = "48608158611";
-        const message = encodeURIComponent("Dzień dobry, chciałbym zapytać o ofertę.");
-
-        window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
-    }
 
     return (
         <div className={styles.websiteLayoutNavContainer}>
@@ -25,21 +21,15 @@ const WebsiteNavHeader = () => {
                 <ul>
                     {NAV_ITEMS.map((item) => (
                         <li>
-                            <Link to={item.path} className={pathname === item.path ? `${styles.active}` : ""}>{item.label}</Link>
+                            <Link
+                                to={item.path}
+                                onClick={()=>{if(setOpen)setOpen(false);}}
+                                className={pathname === item.path ? `${styles.active}` : ""}
+                            >{item.label}</Link>
                         </li>
                     ))}
                 </ul>
             </nav>
-            <Button
-                onClick={WhatsappButtonFunc}
-                type={'button'}
-                className={styles.websiteLayoutWhatsappButton}
-            >
-                <div>
-                    <img src='src/assets/icons/whatsapp-icon.png' alt="whatsapp-icon" />
-                    <span className={''}>WhatsApp</span>
-                </div>
-            </Button>
         </div>
     )
 }

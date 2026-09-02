@@ -7,6 +7,15 @@
   flex-direction: row;
   width: 100%;
   padding: 35px 75px;
+  @media (max-width: 1279px) {
+    padding: 50px;
+  }
+  @media (max-width: 768px) {
+    padding: 50px 35px;
+  }
+  @media (max-width: 500px) {
+    padding: 35px 20px;
+  }
 }
 
 .aboutUsPageStrengthsDiv ul{
@@ -17,6 +26,9 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  @media (max-width: 350px) {
+    flex-direction: column;
+  }
 }
 
 .aboutUsPageStrengthsDiv ul li{
@@ -27,15 +39,39 @@
   align-items: center;
   border-right: 1px solid $footer-chunk-border-color;
   font-family: $font-main;
+  @media (max-width: 768px) {
+    padding-right: 15px;
+  }
+  @media (max-width: 500px) {
+    padding-right: 0;
+  }
+  @media (max-width: 350px) {
+    width: 100%;
+    border: none;
+    margin-bottom: 25px;
+  }
 }
 
 .aboutUsPageStrengthsDiv ul li:last-child{
   border: none;
+  @media (max-width: 350px) {
+    margin-bottom: 0;
+  }
+}
+
+.aboutUsPageStrengthsDiv ul li:last-child, ul li:first-child{
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
 }
 
 .aboutUsPageStrengthsDiv ul li img{
   width: 100px;
   margin-bottom: 15px;
+  @media (max-width: 768px) {
+    width: clamp(70px, 14vw, 100px);
+    margin-bottom: 10px;
+  }
 }
 
 .aboutUsPageStrengthsDiv ul li span{
@@ -43,4 +79,18 @@
   color: $footer-text-color;
   font-weight: 500;
   letter-spacing: 1px;
+  @media (max-width: 1279px) {
+  text-align: center;
+  font-size: 24px;
+}
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: clamp(20px, 4vw, 24px);
+  }
+  @media (max-width: 500px) {
+    font-size: clamp(14px, 3.8vw, 20px);
+  }
+  @media (max-width: 350px) {
+    font-size: 18px;
+  }
 }

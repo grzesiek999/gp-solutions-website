@@ -9,19 +9,54 @@
   width: 100%;
   padding: 30px 150px;
   background-color: #082B5A;
+  @media (max-width: 1279px) {
+    padding: 35px 50px;
+  }
+  @media (max-width: 768px) {
+    padding: 20px 35px;
+  }
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
 }
 
 .servicesPageContactDiv img{
+  margin: 0;
   height: 100px;
-  margin-right: 35px;
+  @media (max-width: 1279px) {
+    height: 90px;
+  }
+  @media (max-width: 768px) {
+    height: 75px;
+  }
+  @media (max-width: 500px) {
+    height: 50px;
+  }
+  @media (max-width: 370px) {
+    height: 35px;
+  }
 }
 
 .servicesPageContactInfoDiv {
-  height: 75px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 25px;
+  @media (max-width: 1279px) {
+    padding: 0 22px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding: 0 18px;
+  }
+  @media (max-width: 500px) {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  @media (max-width: 370px) {
+    padding: 0 7px;
+  }
 }
 
 .servicesPageContactDiv span{
@@ -29,6 +64,18 @@
   font-family: $home-page-banner-font;
   font-weight: 600;
   color: $footer-text-color;
+  @media (max-width: 1279px) {
+    font-size: 24px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+  @media (max-width: 370px) {
+    font-size: 14px;
+  }
 }
 
 .servicesPageContactDiv p{
@@ -37,6 +84,12 @@
   color: $footer-text-color;
   font-size: 22px;
   margin: 0;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 }
 
 .servicesPageContactInfoButton {
@@ -55,4 +108,14 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    border-radius: 8px;
+    font-size: 18px;
+    width: 150px;
+    height: 60px;
+  }
+  @media (max-width: 370px) {
+    font-size: 14px;
+    height: 45px;
+  }
 }

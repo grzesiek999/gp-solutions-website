@@ -5,11 +5,11 @@ import ContactPageMap from "../../components/ContactPageMap/ContactPageMap.tsx";
 
 const ContactPage = () => {
     return (
-        <main>
+        <>
             <ContactPageBanner />
             <ContactPageContent />
             <ContactPageMap />
-        </main>
+        </>
     )
 }
 

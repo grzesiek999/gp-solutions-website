@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+
+
+@media (max-width: 768px) {
+  .isOpenMenu {
+    padding-top: 543px;
+  }
+
+  .isCloseMenu {
+    padding-top: 113px;
+  }
+}
+
+@media (max-width: 500px) {
+  .isOpenMenu {
+    padding-top: 409px;
+  }
+
+  .isCloseMenu {
+    padding-top: 89px;
+  }
+}

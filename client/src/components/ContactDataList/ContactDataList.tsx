@@ -14,6 +14,8 @@ const ContactDataList = ({
                              imgClassName,
                              workHoursLiDivClassName,
 }: ContactDataListProps) => {
+
+
     return (
         <div className={containerClassName}>
             <span className={titleSpanClassName}>Dane kontaktowe</span>

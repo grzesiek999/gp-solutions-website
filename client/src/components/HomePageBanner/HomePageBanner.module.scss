@@ -5,15 +5,43 @@
   width: 100%;
   height: 880px;
   background-image: url("src/assets/images/home_page_photo.png");
+  background-size: cover;
+  background-position: center;
   box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
   -webkit-box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
   -moz-box-shadow: 0px 10px 12px 0px $home-page-banner-shadow;
+  @media (max-width: 768px) {
+    height: 770px;
+  }
+  @media (max-width: 500px) {
+    height: 600px;
+  }
+  @media (max-width: 280px) {
+    height: 700px;
+  }
 }
 
 .hamePageBannerContent {
-  padding: 200px 0 0 75px;
+  padding: 100px 0 0 75px;
   box-sizing: border-box;
   width: 740px;
+  @media (max-width: 1280px) {
+    padding-left: 50px;
+    width: 600px;
+  }
+  @media (max-width: 768px) {
+    width: clamp(450px, 70vw, 500px);
+    padding-top: 120px;
+    padding-left: clamp(25px, 5vw,35px);
+  }
+  @media (max-width: 500px) {
+    width: 280px;
+    padding: 40px 0 0 20px;
+  }
+  @media (max-width: 280px) {
+    width: 100%;
+    padding: 40px 0 0 20px;
+  }
 }
 
 .hamePageBannerContent span{
@@ -23,6 +51,18 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 104px;
+  @media (max-width: 1280px) {
+    font-size: clamp(68px, 7vw, 80px);
+    line-height: clamp(86px, 8vw, 104px);;
+  }
+  @media (max-width: 768px) {
+    font-size: clamp(42px, 7vw, 52px);
+    line-height: clamp(56px, 8vw, 66px);;
+  }
+  @media (max-width: 500px) {
+    font-size: 30px;
+    line-height: 44px;
+  }
 }
 
 .hamePageBannerContent p{
@@ -32,13 +72,34 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 54px;
+  @media (max-width: 768px) {
+    font-size: clamp(24px, 4vw , 30px);
+    line-height: 48px;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    line-height: 34px;
+    margin: 20px 0 25px 0;
+  }
 }
 
 .homePageBannerButtonsDiv {
+  margin: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 70px 0 0 0;
+  }
+  @media (max-width: 500px) {
+    margin: 30px 0 0 0;
+    flex-direction: column;
+    height: 180px;
+    width: fit-content;
+    align-items: center;
+  }
 }
 
 .homePageBannerButtonsSpan {
@@ -49,6 +110,15 @@
   font-weight: 600 !important;
   font-size: 28px !important;
   line-height: 30px !important;
+  @media (max-width: 1280px) {
+    font-size: 24px !important;
+    line-height: 26px !important;
+  }
+  @media (max-width: 768px) {
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 22px !important;
+  }
 }
 
 .homePageBannerContactButton {
@@ -59,43 +129,52 @@
   border: none;
   border-radius: 12px;
   cursor: pointer;
-}
-
-.homePageBannerContactButton div{
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 15px;
-}
-
-.homePageBannerContactButton img{
-  height: 30px;
-  margin-right: 10px;
+  @media (max-width: 1280px) {
+    width: 250px;
+  }
+  @media (max-width: 768px) {
+    width: clamp(190px, 30vw, 210px);
+    height: 75px;
+  }
 }
 
 .homePageBannerCheckServicesButton {
   width: 325px;
   height: 80px;
   box-sizing: border-box;
-  background-color: #010917;
+  background-color: $home-page-banner-button-background;
   opacity: 0.9;
   border: 2px solid $footer-text-color;
   border-radius: 12px;
   cursor: pointer;
+  @media (max-width: 1280px) {
+    width: 275px;
+  }
+  @media (max-width: 768px) {
+    width: clamp(195px, 32vw, 225px);
+    height: 75px;
+  }
 }
 
-.homePageBannerCheckServicesButton div{
+.homePageBannerButtonDiv{
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 15px;
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 }
 
-.homePageBannerCheckServicesButton img{
+.homePageBannerButtonImg{
   height: 30px;
+  width: auto;
   margin-right: 10px;
+  @media (max-width: 768px) {
+    height: 25px;
+    margin-right: 5px;
+  }
 }

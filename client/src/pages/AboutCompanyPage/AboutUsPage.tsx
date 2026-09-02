@@ -6,12 +6,12 @@ import AboutUsPageInfo from "../../components/AboutUsPageInfo/AboutUsPageInfo.ts
 
 const AboutUsPage = () => {
     return (
-        <main>
+        <>
             <AboutUsPageBanner />
             <AboutUsPageContent />
             <AboutUsPageStrengths />
             <AboutUsPageInfo />
-        </main>
+        </>
     )
 }
 
