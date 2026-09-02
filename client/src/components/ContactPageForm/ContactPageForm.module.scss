@@ -7,6 +7,12 @@
   display: flex;
   flex-direction: column;
   border-right: 2px solid $contact-content-border-color;
+  @media (max-width: 1279px) {
+    padding: 0 75px 0 0;
+  }
+  @media (max-width: 1020px) {
+    padding: 0 40px 0 0;
+  }
   @media (max-width: 768px) {
     width: 100%;
     padding: 0;
@@ -21,6 +27,9 @@
   font-size: 40px;
   font-weight: 600;
   font-family: $font-main;
+  @media (max-width: 1020px) {
+    font-size: 32px;
+  }
   @media (max-width: 450px) {
     font-size: 30px;
     margin-bottom: 35px;
@@ -43,6 +52,9 @@
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 15px;
+  @media (max-width: 1020px) {
+    font-size: 22px;
+  }
   @media (max-width: 450px) {
     font-size: 20px;
   }
@@ -61,6 +73,10 @@
   font-size: 26px;
   border: 1px solid $contact-input-border-color;
   border-radius: 6px;
+  @media (max-width: 1020px) {
+    font-size: 22px;
+    padding: 10px 15px;
+  }
   @media (max-width: 450px) {
     font-size: 20px;
     padding: 9px 10px;
@@ -76,6 +92,9 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1020px) {
+    width: 85%;
+  }
   @media (max-width: 768px) {
     width: 75%
   }

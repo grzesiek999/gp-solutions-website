@@ -69,7 +69,7 @@ const HomePageContent = () => {
 
     const isMobile = useMedia({
         minWidth: 501,
-        maxWidth: 768
+        maxWidth: 1279
     });
 
     return (

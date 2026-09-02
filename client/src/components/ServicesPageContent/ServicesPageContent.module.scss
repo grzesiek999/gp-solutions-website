@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
   padding: 50px 100px;
+  @media (max-width: 1279px) {
+    padding: 50px;
+  }
   @media (max-width: 768px) {
     padding: 50px 35px;
   }
@@ -31,6 +34,9 @@
   background-color: $services-page-content-li-background;
   padding: 25px 100px;
   border-radius: 12px;
+  @media (max-width: 1279px) {
+    padding: 25px 50px;
+  }
   @media (max-width: 768px) {
     padding: 25px 25px;
   }

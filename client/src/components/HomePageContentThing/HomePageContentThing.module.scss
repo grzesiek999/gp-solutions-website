@@ -13,7 +13,7 @@
   -webkit-box-shadow: -5px 10px 16px 2px $home-page-content-thing-shadov;
   -moz-box-shadow: -5px 10px 16px 2px $home-page-content-thing-shadov;
   border: 1px solid $home-page-content-thing-border;
-  @media (max-width: 768px) {
+  @media (max-width: 1279px) {
     width: 48%;
     margin-bottom: 50px;
   }
@@ -27,6 +27,11 @@
   height: clamp(125px, 9vw, 150px);
   width: clamp(125px, 9vw, 150px);
   margin-bottom: 30px;
+  @media (max-width: 1279px) {
+    height: clamp(125px, 16vw, 150px);
+    width: clamp(125px, 16vw, 150px);
+    margin-bottom: 30px;
+  }
   @media (max-width: 768px) {
     height: clamp(100px, 20vw, 125px);
     width: clamp(100px, 20vw, 125px);
@@ -45,6 +50,10 @@
   letter-spacing: 1px;
   color: $header-text-color;
   text-align: center;
+  @media (max-width: 1279px) {
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: clamp(30px, 3vw, 34px);
+  }
   @media (max-width: 768px) {
     font-size: clamp(16px, 3.2vw, 24px);
     line-height: clamp(22px, 3.3vw, 30px);
@@ -60,6 +69,10 @@
   letter-spacing: 1px;
   color: $header-text-color;
   text-align: center;
+  @media (max-width: 1279px) {
+    font-size: clamp(20px, 2.5vw, 24px);
+    line-height: clamp(34px, 3vw, 38px);
+  }
   @media (max-width: 768px) {
     font-size: clamp(16px, 3.2vw, 20px);
     line-height: clamp(28px, 3.3vw, 38px);
@@ -77,6 +90,10 @@
   color: $home-page-button-blue;
   text-align: center;
   text-decoration: none;
+  @media (max-width: 1279px) {
+    font-size: clamp(20px, 2.5vw, 24px);
+    line-height: clamp(34px, 3vw, 38px);
+  }
   @media (max-width: 768px) {
     font-size: clamp(16px, 3.2vw, 20px);
     line-height: clamp(28px, 3.3vw, 38px);

@@ -18,7 +18,7 @@ const HomePageBanner = () => {
                         <p>Bezpieczeństwo. Niezawodność. Wsparcie. </p>
                         <p>Skup się na swoim biznesie - <br/> my zajmiemy się IT.</p>
                     </>:
-                    <p>Bezpieczeństwo. Niezawodność. Wsparcie. Skup się na swoim biznesie - <br/> my zajmiemy się IT.</p>
+                    <p>Bezpieczeństwo. Niezawodność. Wsparcie. <br /> Skup się na swoim biznesie - <br/> my zajmiemy się IT.</p>
                 }
                 <div className={styles.homePageBannerButtonsDiv}>
                     <Button

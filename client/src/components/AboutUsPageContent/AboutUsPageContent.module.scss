@@ -6,6 +6,9 @@
   padding: 50px 75px;
   display: flex;
   flex-direction: row;
+  @media (max-width: 1279px) {
+    padding: 50px;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 0 35px 50px 35px;
@@ -20,6 +23,9 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1279px) {
+    width: 58%;
+  }
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -30,6 +36,9 @@
   width: 50%;
   display: flex;
   justify-content: center;
+  @media (max-width: 1279px) {
+    width: 42%;
+  }
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -57,11 +66,11 @@
   font-weight: 600;
   font-family: $font-main;
   margin-bottom: 30px;
-  @media (max-width: 768px) {
-    text-align: center;
+  @media (max-width: 1279px) {
+    font-size: 36px;
   }
   @media (max-width: 768px) {
-    font-size: 36px;
+    text-align: center;
   }
   @media (max-width: 400px) {
     font-size: 30px;
@@ -74,6 +83,9 @@
   font-family: $font-main;
   line-height: 44px;
   margin: 0 0 30px 0;
+  @media (min-width: 769px) and (max-width: 1279px) {
+    font-size: 24px;
+  }
   @media (max-width: 768px) {
     text-align: center;
   }
@@ -137,6 +149,10 @@
   font-size: 26px;
   font-weight: 600;
   font-family: $font-main;
+  @media (min-width: 769px) and (max-width: 940px) {
+    margin: 0;
+    font-size: 24px;
+  }
   @media (max-width: 400px) {
     font-size: 24px;
   }
@@ -151,6 +167,9 @@
   font-weight: 400;
   font-family: $font-main;
   margin: 0;
+  @media (min-width: 769px) and (max-width: 1279px) {
+    font-size: 22px;
+  }
   @media (max-width: 400px) {
     font-size: 20px;
   }
