@@ -1,11 +1,19 @@
 
 
 const HowWeWorkList = () => {
+
+    const howWeWorkIconsPaths = {
+        first: '/icons/how-we-work-1-icon.png',
+        second: '/icons/how-we-work-2-icon.png',
+        third: '/icons/how-we-work-3-icon.png',
+        fourthd: '/icons/how-we-work-4-icon.png'
+}
+
     return (
         <ul>
             <li>
                 <div>
-                    <img src={'/src/assets/icons/how-we-work-1-icon.png'} alt='how-we-work-1-icon error' />
+                    <img src={howWeWorkIconsPaths.first} alt='how-we-work-1-icon error' />
                 </div>
                 <div>
                     <span>Zrozumienie potrzeb</span>
@@ -14,7 +22,7 @@ const HowWeWorkList = () => {
             </li>
             <li>
                 <div>
-                    <img src={'/src/assets/icons/how-we-work-2-icon.png'} alt='how-we-work-2-icon error' />
+                    <img src={howWeWorkIconsPaths.second} alt='how-we-work-2-icon error' />
                 </div>
                 <div>
                     <span>Proaktywne działanie</span>
@@ -23,7 +31,7 @@ const HowWeWorkList = () => {
             </li>
             <li>
                 <div>
-                    <img src={'/src/assets/icons/how-we-work-3-icon.png'} alt='how-we-work-3-icon error' />
+                    <img src={howWeWorkIconsPaths.third} alt='how-we-work-3-icon error' />
                 </div>
                 <div>
                     <span>Szybka reakcja</span>
@@ -32,7 +40,7 @@ const HowWeWorkList = () => {
             </li>
             <li>
                 <div>
-                    <img src={'/src/assets/icons/how-we-work-4-icon.png'} alt='how-we-work-4-icon error' />
+                    <img src={howWeWorkIconsPaths.fourthd} alt='how-we-work-4-icon error' />
                 </div>
                 <div>
                     <span>Długofalowa współpraca</span>

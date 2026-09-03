@@ -8,10 +8,12 @@ const FooterInformation = () => {
 
     const isMobile = useMedia({ maxWidth: 768 });
 
+    const logoIconPath = '/icons/gp-solutions-white.png'
+
     return (
         <div className={styles.footerInformationDiv}>
             <div className={styles.footerInformationChunk}>
-                <CompanyLogo className={styles.websiteFooterLogo} path={'src/assets/icons/gp-solutions-white.png'} />
+                <CompanyLogo className={styles.websiteFooterLogo} path={logoIconPath} />
                 {isMobile ? null:
                 <span className={styles.footerSpanType1}>
                     Kompleksowa opieka IT dla firm. Bezpieczeństwo, niezawodność i wsparcie na którym możesz polegać.

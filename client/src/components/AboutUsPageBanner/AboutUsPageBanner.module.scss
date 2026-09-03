@@ -3,7 +3,7 @@
 .aboutUsPageBannerDiv {
   box-sizing: border-box;
   height: 799px;
-  background-image: url("../../assets/images/about_us_page_photo.png");
+  background-image: $aboutUs-page-banner-background-img;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

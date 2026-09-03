@@ -15,6 +15,10 @@ const ContactDataList = ({
                              workHoursLiDivClassName,
 }: ContactDataListProps) => {
 
+    const phoneIconPath = '/icons/blue-phone-icon2.png'
+    const mailIconPath = '/icons/blue-email-icon2.png'
+    const pineappleIconPath = '/icons/pineapple-icon2.png'
+    const clockIconPath = '/icons/clock-icon.png'
 
     return (
         <div className={containerClassName}>
@@ -22,7 +26,7 @@ const ContactDataList = ({
             <ul>
                 <li>
                     <img
-                        src={`src/assets/icons/blue-phone-icon2.png`}
+                        src={phoneIconPath}
                         alt={'phone icon error'}
                         className={imgClassName}
                     />
@@ -30,7 +34,7 @@ const ContactDataList = ({
                 </li>
                 <li>
                     <img
-                        src={`src/assets/icons/blue-email-icon2.png`}
+                        src={mailIconPath}
                         alt={'mail icon error'}
                         className={imgClassName}
                     />
@@ -38,7 +42,7 @@ const ContactDataList = ({
                 </li>
                 <li>
                     <img
-                        src={`src/assets/icons/pineapple-icon2.png`}
+                        src={pineappleIconPath}
                         alt={'pineapple icon error'}
                         className={imgClassName}
                     />
@@ -47,7 +51,7 @@ const ContactDataList = ({
                 {workHoursLiDivClassName &&
                     <li>
                         <img
-                            src={`src/assets/icons/clock-icon.png`}
+                            src={clockIconPath}
                             alt={'clock icon error'}
                             className={imgClassName}
                         />

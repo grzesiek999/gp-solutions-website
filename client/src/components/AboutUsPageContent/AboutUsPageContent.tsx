@@ -23,19 +23,21 @@ const AboutUsPageContent = () => {
 
     const isMobile = useMedia({maxWidth: 768});
 
+    const shortLogoIconPath = '/icons/short-logo-icon.png'
+
     return (
         <>
             {isMobile?
                 <div className={styles.aboutUsPageContentMainDiv}>
                     <div className={styles.aboutUsPageContentLogoDiv}>
-                        <img src={'src/assets/icons/short-logo-icon.png'} alt='short logo icon error' />
+                        <img src={shortLogoIconPath} alt='short logo icon error' />
                     </div>
                     {Part1}
                 </div>:
                 <div className={styles.aboutUsPageContentMainDiv}>
                     {Part1}
                     <div className={styles.aboutUsPageContentLogoDiv}>
-                        <img src={'src/assets/icons/short-logo-icon.png'} alt='short logo icon error' />
+                        <img src={shortLogoIconPath} alt='short logo icon error' />
                     </div>
                 </div>
             }

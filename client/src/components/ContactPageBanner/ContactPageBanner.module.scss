@@ -3,7 +3,7 @@
 .contactPageBannerDiv {
   box-sizing: border-box;
   height: 799px;
-  background-image: url("src/assets/images/contact_page_photo.png");
+  background-image: $contact-page-banner-background-img;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
