@@ -20,12 +20,15 @@ const Header = ({ isOpen, setOpen }: HeaderProps) => {
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
     }
 
+    const logoPath = '/icons/gp-solutions-blue.png';
+    const whatsappIconPath = '/icons/whatsapp-icon.png'
+
     return (
         <header>
             {isMobile ?
             <div className={styles.mobileWebsiteLayoutHeaderDiv}>
                 <div className={styles.mobileWebsiteLayoutHeaderDivPart1}>
-                    <Link to={'/'}><CompanyLogo className={styles.websiteLayoutLogo} path={`src/assets/icons/gp-solutions-blue.png`}/></Link>
+                    <Link to={'/'}><CompanyLogo className={styles.websiteLayoutLogo} path={logoPath}/></Link>
                     <Hamburger
                         toggled={isOpen}
                         toggle={setOpen}
@@ -41,7 +44,7 @@ const Header = ({ isOpen, setOpen }: HeaderProps) => {
                             className={styles.mobileWebsiteLayoutWhatsappButton}
                         >
                             <div>
-                                <img src='src/assets/icons/whatsapp-icon.png' alt="whatsapp-icon"/>
+                                <img src={whatsappIconPath} alt="whatsapp-icon"/>
                                 <span>WhatsApp</span>
                             </div>
                         </Button>
@@ -49,7 +52,7 @@ const Header = ({ isOpen, setOpen }: HeaderProps) => {
                     :null}
             </div>:
             <div className={`${styles.websiteLayoutHeaderDiv}`}>
-                <Link to={'/'}><CompanyLogo className={styles.websiteLayoutLogo} path={`src/assets/icons/gp-solutions-blue.png`}/></Link>
+                <Link to={'/'}><CompanyLogo className={styles.websiteLayoutLogo} path={logoPath}/></Link>
                 <WebsiteNavHeader/>
                 <Button
                     onClick={WhatsappButtonFunc}
@@ -57,7 +60,7 @@ const Header = ({ isOpen, setOpen }: HeaderProps) => {
                     className={styles.websiteLayoutWhatsappButton}
                 >
                     <div>
-                        <img src='src/assets/icons/whatsapp-icon.png' alt="whatsapp-icon" />
+                        <img src={whatsappIconPath} alt="whatsapp-icon" />
                         <span>WhatsApp</span>
                     </div>
                 </Button>

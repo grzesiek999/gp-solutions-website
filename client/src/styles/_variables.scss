@@ -1,30 +1,43 @@
 
+// fonts
 $font-main: 'Inter', sans-serif;
-
-$header-border-color: rgba(204, 204, 204, 0.5);
-$header-text-color: #000000;
-$header-background-color: #FFF;
-$header-shadow: rgba(150, 150, 150, 0.4);
-$header-active-page-text-color: #056cfe;
-
-$footer-chunk-border-color: #333333;
-$footer-text-color: #FBFCFC;
-$footer-background-color: #04192F;
-
 $home-page-banner-font: 'Poppins', sans-serif;
-$home-page-button-blue: #0C65F7;
-$home-page-banner-shadow: rgba(3, 11, 20, 0.5);
-$home-page-content-thing-shadov: rgba(180, 180, 180, 0.4);
-$home-page-content-thing-border: rgba(180, 180, 180, 0.05);
-$home-page-last-chunk-border-color: #00101F;
-$home-page-banner-button-background: #010917;
 
+
+// fonts colors
+$header-text-color: #000000;
+$footer-text-color: #FBFCFC;
+$header-active-page-text-color: #056cfe;
 $aboutUs-strengths-p-color: #DEE1E1;
 
-$services-page-content-li-background: #FAFAFB;
 
+// buttons colors
+$home-page-button-blue: #0C65F7;
+$home-page-banner-button-background: #010917;
+$whatsapp-green-color: #25D366;
+
+
+// borders colors
+$header-border-color: rgba(204, 204, 204, 0.5);
+$footer-chunk-border-color: #333333;
+$home-page-content-thing-border: rgba(180, 180, 180, 0.05);
+$home-page-last-chunk-border-color: #00101F;
 $contact-content-border-color: rgba(225, 225, 225, 0.4);
 $contact-input-border-color: rgba(225, 225, 225, 1);
+
+
+// backgrounds colors
+$header-background-color: #FFF;
+$footer-background-color: #04192F;
+$services-page-content-li-background: #FAFAFB;
 $contact-page-map-info-background-color: #F6F6F6;
 
-$whatsapp-green-color: #25D366;
+
+// shadows
+$header-shadow: rgba(150, 150, 150, 0.4);
+$home-page-banner-shadow: rgba(3, 11, 20, 0.5);
+$home-page-content-thing-shadov: rgba(180, 180, 180, 0.4);
+
+
+// images paths
+$home-page-banner-background-img: url("/images/home_page_photo.png");
