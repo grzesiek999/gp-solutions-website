@@ -1,10 +1,16 @@
 import styles from './ServicesList.module.scss'
 
 const ServicesList = () => {
+
+    const itCareIconPath= '/icons/it-care-icon.png'
+    const cybersecurityIconPath= '/icons/cybersecurity-icon.png'
+    const backupIconPath = '/icons/backup-icon.png'
+    const educationIconPath = '/icons/education-icon.png'
+
     return (
         <ul>
             <li>
-                <img src='/src/assets/icons/it-care-icon.png' alt='it-care-icon error' />
+                <img src={itCareIconPath} alt='it-care-icon error' />
                 <div className={styles.servicesListDiv}>
                     <span>Opieka IT</span>
                     <p>Zapewniamy bierzące wsparcie dla użytkowników oraz zarządzanie infrastrukturą IT w twojej firmie.</p>
@@ -17,7 +23,7 @@ const ServicesList = () => {
                 </div>
             </li>
             <li>
-                <img src='/src/assets/icons/cybersecurity-icon.png' alt='cybersecurity icon error' />
+                <img src={cybersecurityIconPath} alt='cybersecurity icon error' />
                 <div className={styles.servicesListDiv}>
                     <span>Cyberbezpieczeństwo</span>
                     <p>Chronimy Twoją firmę przed zagrożeniami z internetu i pomagamy budować bezpieczne środowisko pracy.</p>
@@ -30,7 +36,7 @@ const ServicesList = () => {
                 </div>
             </li>
             <li>
-                <img src='/src/assets/icons/backup-icon.png' alt='backup icon error' />
+                <img src={backupIconPath} alt='backup icon error' />
                 <div className={styles.servicesListDiv}>
                     <span>Backup danych</span>
                     <p>Regularne kopie zapasowe to gwarancja ciągłości działania i ochrona przed utratą danych.</p>
@@ -43,7 +49,7 @@ const ServicesList = () => {
                 </div>
             </li>
             <li>
-                <img src='/src/assets/icons/education-icon.png' alt='education icon error' />
+                <img src={educationIconPath} alt='education icon error' />
                 <div className={styles.servicesListDiv}>
                     <span>Szkolenia pracowników</span>
                     <p>Podnosimy świadomość i kompetencje Twojego zespołu w zakresie IT i cyberbezpieczeństwa.</p>

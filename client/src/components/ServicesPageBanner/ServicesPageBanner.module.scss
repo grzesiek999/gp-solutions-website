@@ -3,7 +3,7 @@
 .servicesPageBannerDiv {
   box-sizing: border-box;
   height: 799px;
-  background-image: url("src/assets/images/services_page_photo.png");
+  background-image: $services-page-banner-background-img;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

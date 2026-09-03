@@ -10,9 +10,11 @@ const ServicesPageContact = () => {
     const navigate = useNavigate();
     const isMini = useMedia({ maxWidth: 369 });
 
+    const contactIconPath = '/icons/services-contact-icon.png'
+
     return (
         <div className={styles.servicesPageContactDiv}>
-            <img src='/src/assets/icons/services-contact-icon.png' alt='services contact icon error' />
+            <img src={contactIconPath} alt='services contact icon error' />
             <div className={styles.servicesPageContactInfoDiv}>
                 <span>Nie widzisz usługi, której potrzebujesz?</span>
                 {!isMini&&<p>Skontaktuj się z nami - na pewno znajdziemy rozwiązanie.</p>}

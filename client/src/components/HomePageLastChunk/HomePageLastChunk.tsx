@@ -5,6 +5,8 @@ import styles from "./HomePageLastChunk.module.scss";
 const HomePageLastChunk = () => {
     const navigate = useNavigate();
 
+    const buttonContatIcon = '/icons/white-phone-icon.png'
+
     return (
         <div className={styles.homePageLastChunkDiv}>
             <div className={styles.homePageLastChunkPart1}>
@@ -18,7 +20,7 @@ const HomePageLastChunk = () => {
                     onClick={()=> navigate('/contact')}
                 >
                     <div>
-                        <img src={'src/assets/icons/white-phone-icon.png'} alt='white phone icon error' />
+                        <img src={buttonContatIcon} alt='white phone icon error' />
                         <span className={styles.homePageLastChunkContactButtonSpan}>Skontaktuj się</span>
                     </div>
                 </Button>

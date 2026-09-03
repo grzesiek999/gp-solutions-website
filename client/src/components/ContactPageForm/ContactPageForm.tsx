@@ -49,6 +49,8 @@ const ContactPageForm = () => {
         }
     }
 
+    const sendMessIconPath = '/icons/email-send-icon.png'
+
     return (
         <div className={styles.contactPageFormDiv}>
             <span className={styles.contactPageFormTitle}>Wyślij wiadomość</span>
@@ -118,7 +120,7 @@ const ContactPageForm = () => {
                     >
                         <span>{status === 'sending' ? 'Wysyłanie...' : 'Wyślij wiadomość'}</span>
                         <img
-                            src={'src/assets/icons/email-send-icon.png'}
+                            src={sendMessIconPath}
                             alt={'email send icon error'}
                         />
                     </Button>

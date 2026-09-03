@@ -12,7 +12,7 @@ const HomePageContentThing = ({img_name, title, content, link} : HomePageContent
     return (
         <div className={styles.homePageContentThingDiv}>
             <img
-                src={`src/assets/icons/${img_name}.png`}
+                src={`/icons/${img_name}.png`}
                 alt={`${img_name} error`}
             />
             <span>{title}</span>

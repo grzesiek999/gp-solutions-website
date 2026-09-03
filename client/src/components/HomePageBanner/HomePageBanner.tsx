@@ -8,8 +8,8 @@ const HomePageBanner = () => {
     const navigate = useNavigate();
     const isMobile = useMedia({ maxWidth: 768 });
 
-    const contactButtonIcon = '/icons/white-phone-icon.png';
-    const checkServicesButtonIcon = '/icons/white-mail-icon.png';
+    const contactButtonIconPath = '/icons/white-phone-icon.png';
+    const checkServicesButtonIconPath = '/icons/white-mail-icon.png';
 
 
     return (
@@ -31,7 +31,7 @@ const HomePageBanner = () => {
                     >
                         <div className={styles.homePageBannerButtonDiv}>
                             <img
-                                src={contactButtonIcon}
+                                src={contactButtonIconPath}
                                 alt='white phone icon error'
                                 className={styles.homePageBannerButtonImg}
                             />
@@ -45,7 +45,7 @@ const HomePageBanner = () => {
                     >
                         <div className={styles.homePageBannerButtonDiv}>
                             <img
-                                src={checkServicesButtonIcon}
+                                src={checkServicesButtonIconPath}
                                 alt='white mail icon error'
                                 className={styles.homePageBannerButtonImg}
                             />
