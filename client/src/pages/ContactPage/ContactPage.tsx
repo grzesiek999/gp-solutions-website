@@ -13,6 +13,10 @@ const ContactPage = () => {
                     name="description"
                     content="Skontaktuj się z GP IT Solutions. Oferujemy kompleksową obsługę IT, cyberbezpieczeństwo i wsparcie informatyczne dla firm z całej Polski, stacjonarnie i zdalnie."
                 />
+                <link
+                    rel="canonical"
+                    href="https://gpitsolutions.pl/contact"
+                />
             </Helmet>
             <ContactPageBanner />
             <ContactPageContent />

@@ -14,6 +14,10 @@ const AboutUsPage = () => {
                     name="description"
                     content="Poznaj GP IT Solutions — zapewniamy kompleksową obsługę informatyczną dla małych i średnich firm. Oferujemy wsparcie IT, bezpieczeństwo oraz rozwiązania dopasowane do potrzeb Twojego biznesu."
                 />
+                <link
+                    rel="canonical"
+                    href="https://gpitsolutions.pl/about_us"
+                />
             </Helmet>
             <AboutUsPageBanner />
             <AboutUsPageContent />
