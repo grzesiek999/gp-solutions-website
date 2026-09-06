@@ -13,6 +13,10 @@ const HomePage = () => {
                     name="description"
                     content="Usługi informatyczne, kompleksowa obsługa klientów i nowoczesne rozwiązania IT."
                 />
+                <link
+                    rel="canonical"
+                    href="https://gpitsolutions.pl/"
+                />
             </Helmet>
             <HomePageBanner />
             <HomePageContent />
