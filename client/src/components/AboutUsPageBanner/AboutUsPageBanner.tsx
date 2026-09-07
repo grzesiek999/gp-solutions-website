@@ -1,11 +1,13 @@
-import styles from './AboutUsPageBanner.module.scss';
 
 const AboutUsPageBanner = () => {
+
+    const backgroundImgPath = `url("/images/about_us_page_photo.png")`
+
     return (
-        <div className={styles.aboutUsPageBannerDiv}>
-            <div className={styles.aboutUsPageBannerContent}>
-                <span>O nas</span>
-                <p>Poznaj GP IT Solutions</p>
+        <div className='pageBanner' style={{backgroundImage: backgroundImgPath}}>
+            <div className='pageBannerContent'>
+                <h1>O nas</h1>
+                <h6>Poznaj GP IT Solutions</h6>
             </div>
         </div>
     )

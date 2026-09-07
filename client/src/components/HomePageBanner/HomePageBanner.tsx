@@ -10,18 +10,17 @@ const HomePageBanner = () => {
 
     const contactButtonIconPath = '/icons/white-phone-icon.png';
     const checkServicesButtonIconPath = '/icons/white-mail-icon.png';
-
+    const backgroundImgPath = `url("/images/home_page_photo.webp")`
 
     return (
-        <div className={styles.homePageBannerDiv}>
-            <div className={styles.hamePageBannerContent}>
-                <span>Kompleksowa opieka IT dla firm</span>
+        <div className='pageBanner' style={{backgroundImage: backgroundImgPath}}>
+            <div className='pageBannerContent'>
+                <h1>Kompleksowa opieka IT dla firm</h1>
                 {isMobile ?
                     <>
-                        <p>Bezpieczeństwo. Niezawodność. Wsparcie. </p>
-                        <p>Skup się na swoim biznesie - <br/> my zajmiemy się IT.</p>
+                        <h6>Bezpieczeństwo. Niezawodność. Wsparcie. <br/>Skup się na swoim biznesie - <br/> my zajmiemy się IT.</h6>
                     </>:
-                    <p>Bezpieczeństwo. Niezawodność. Wsparcie. <br /> Skup się na swoim biznesie - <br/> my zajmiemy się IT.</p>
+                    <h6>Bezpieczeństwo. Niezawodność. Wsparcie. <br /> Skup się na swoim biznesie - <br/> my zajmiemy się IT.</h6>
                 }
                 <div className={styles.homePageBannerButtonsDiv}>
                     <Button

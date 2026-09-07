@@ -1,12 +1,13 @@
-import styles from "./ContactPageBanner.module.scss"
-
 
 const ContactPageBanner = () => {
+
+    const backgroundImgPath = `url("/images/contact_page_photo.webp")`
+
     return (
-        <div className={styles.contactPageBannerDiv}>
-            <div className={styles.contactPageBannerContent}>
-                <span>Kontakt</span>
-                <p>Skontaktuj się z nami - chętnie odpowiemy na Twoje pytania.</p>
+        <div className='pageBanner' style={{backgroundImage: backgroundImgPath}}>
+            <div className='pageBannerContent'>
+                <h1>Kontakt</h1>
+                <h6>Skontaktuj się z nami - chętnie odpowiemy na Twoje pytania.</h6>
             </div>
         </div>
     )
