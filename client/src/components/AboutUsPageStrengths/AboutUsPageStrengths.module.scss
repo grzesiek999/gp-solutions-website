@@ -67,6 +67,7 @@
 
 .aboutUsPageStrengthsDiv ul li img{
   width: 100px;
+  height: auto;;
   margin-bottom: 15px;
   @media (max-width: 768px) {
     width: clamp(70px, 14vw, 100px);

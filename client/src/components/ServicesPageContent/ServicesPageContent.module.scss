@@ -54,11 +54,10 @@
 
 .servicesPageContentDiv img{
   margin-top: 40px;
-  width: 150px;
+  width: auto;
   height: 150px;
   @media (max-width: 768px) {
     height: clamp(100px, 20vw, 125px);
-    width: clamp(100px, 20vw, 125px);
   }
   @media (max-width: 370px) {
     margin: 0 auto 0 auto;

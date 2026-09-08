@@ -25,16 +25,14 @@
 
 .homePageContentThingDiv img {
   height: clamp(125px, 9vw, 150px);
-  width: clamp(125px, 9vw, 150px);
+  width: auto;
   margin-bottom: 30px;
   @media (max-width: 1279px) {
     height: clamp(125px, 16vw, 150px);
-    width: clamp(125px, 16vw, 150px);
     margin-bottom: 30px;
   }
   @media (max-width: 768px) {
     height: clamp(100px, 20vw, 125px);
-    width: clamp(100px, 20vw, 125px);
     margin-bottom: 25px;
   }
   @media (max-width: 500px) {
