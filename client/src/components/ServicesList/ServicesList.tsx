@@ -3,10 +3,10 @@ import styles from './ServicesList.module.scss'
 const ServicesList = () => {
 
     const iconPaths = {
-        webDevelopment: '',
-        customSoftware: '',
-        automation: '',
-        integration: '',
+        webDevelopment: '/icons/web-development-icon.png',
+        customSoftware: '/icons/custom-software-icon.png',
+        automation: '/icons/automation-icon.png',
+        integration: '/icons/integration-icon.png',
         itCare: '/icons/it-care-icon.png',
         cybersecurity: '/icons/cybersecurity-icon.png',
         backup: '/icons/backup-icon.png',
