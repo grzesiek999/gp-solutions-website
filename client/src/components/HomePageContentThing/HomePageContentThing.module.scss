@@ -52,8 +52,8 @@
     line-height: clamp(28px, 3vw, 32px);
   }
   @media (max-width: 768px) {
-    font-size: clamp(16px, 3.2vw, 24px);
-    line-height: clamp(22px, 3.3vw, 30px);
+    font-size: clamp(17px, 3.2vw, 24px);
+    line-height: clamp(22px, 3.5vw, 30px);
   }
 }
 
@@ -73,7 +73,7 @@
   @media (max-width: 768px) {
     font-size: clamp(16px, 3.2vw, 20px);
     line-height: clamp(28px, 3.3vw, 34px);
-    margin: 20px 0;
+    margin: 15px 0;
   }
 }
 

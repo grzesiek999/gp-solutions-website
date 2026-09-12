@@ -70,14 +70,14 @@ const things5 = (
         <HomePageContentThing
             img_name={'web-development-icon'}
             title={'Strony internetowe'}
-            content={'Tworzymy nowoczesne i dopasowane do potrzeb firmy strony internetowe.'}
+            content={'Tworzymy nowoczesne, szybkie i responsywne strony internetowe dopasowane do Twojej firmy.'}
             link={'/services'}
         />
 
         <HomePageContentThing
             img_name={'custom-software-icon'}
             title={'Dedykowane systemy'}
-            content={'Tworzymy spersonalizowane aplikacje i systemy wspierające codzienne funkcjonowanie firmy.'}
+            content={'Projektujemy i wdrażamy indywidualne rozwiązania informatyczne dopasowane do potrzeb Twojego biznesu.'}
             link={'/services'}
         />
     </>
@@ -88,14 +88,14 @@ const things6 = (
         <HomePageContentThing
             img_name={'automation-icon'}
             title={'Automatyzacja'}
-            content={'Automatyzujemy powtarzalne zadania i tworzymy boty usprawniające pracę firmy.'}
+            content={'Automatyzujemy powtarzalne procesy, oszczędzając Twój czas i zwiększając efektywność pracy.'}
             link={'/services'}
         />
 
         <HomePageContentThing
             img_name={'integration-icon'}
             title={'Integracje systemów'}
-            content={'Łączymy wykorzystywane przez firmę systemy, aplikacje i usługi w jedno spójne środowisko.'}
+            content={'Łączymy Twoje systemy i narzędzia, zapewniając płynny przepływ danych i lepszą współpracę.'}
             link={'/services'}
         />
     </>
