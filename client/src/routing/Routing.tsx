@@ -1,6 +1,5 @@
 import {type ReactElement} from 'react'
 import {RouterProvider, createBrowserRouter, Route, createRoutesFromElements} from 'react-router-dom'
-import {ROUTER_PATH} from "./RouterPath"
 import WebsiteLayout from "../layouts/WebsiteLayout/WebsiteLayout.tsx";
 import HomePage from "../pages/HomePage/HomePage.tsx";
 import ContactPage from "../pages/ContactPage/ContactPage.tsx";
@@ -12,9 +11,19 @@ const ROUTER = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<WebsiteLayout />} >
             <Route index element={<HomePage />} />
-            <Route path={ROUTER_PATH.SERVICES} element={<ServicesPage />} />
-            <Route path={ROUTER_PATH.ABOUT_COMPANY} element={<AboutUsPage />} />
-            <Route path={ROUTER_PATH.CONTACT} element={<ContactPage />} />
+            <Route path='/services'>
+                <Route index element={<ServicesPage />} />
+                <Route path='websites' element={null} />
+                <Route path='softwares' element={null} />
+                <Route path='automation' element={null} />
+                <Route path='integration' element={null} />
+                <Route path='itcare' element={null} />
+                <Route path='cybersecurity' element={null} />
+                <Route path='backups' element={null} />
+                <Route path='education' element={null} />
+            </Route>
+            <Route path='about_us' element={<AboutUsPage />} />
+            <Route path='contact' element={<ContactPage />} />
         </Route>
     )
 )

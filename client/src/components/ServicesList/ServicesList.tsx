@@ -1,4 +1,6 @@
 import styles from './ServicesList.module.scss'
+import {ROUTER_PATH} from "../../routing/RouterPath.tsx";
+import {Link} from "react-router-dom";
 
 const ServicesList = () => {
 
@@ -27,6 +29,10 @@ const ServicesList = () => {
                         <li>✓ Optymalizacja pod kątem SEO i szybkości działania</li>
                     </ul>
                 </div>
+                <Link
+                    to={ROUTER_PATH.SERVICES_WEBSITES}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>
             <li>
                 <img src={iconPaths.customSoftware} alt='custom-software-icon error' />
@@ -40,6 +46,10 @@ const ServicesList = () => {
                         <li>✓ Wsparcie i rozwój po wdrożeniu</li>
                     </ul>
                 </div>
+                <Link
+                    to={ROUTER_PATH.SERVICES_SOFTWARES}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>
             <li>
                 <img src={iconPaths.automation} alt='automation-icon error' />
@@ -53,6 +63,10 @@ const ServicesList = () => {
                         <li>✓ Skrypty i boty usprawniające codzienną pracę</li>
                     </ul>
                 </div>
+                <Link
+                    to={ROUTER_PATH.SERVICES_AUTOMATION}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>
             <li>
                 <img src={iconPaths.integration} alt='integration-icon' />
@@ -66,6 +80,10 @@ const ServicesList = () => {
                         <li>✓ Wsparcie przy migracji i wdrożeniu</li>
                     </ul>
                 </div>
+                <Link
+                    to={ROUTER_PATH.SERVICES_INTEGRATION}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>
             <li>
                 <img src={iconPaths.itCare} alt='it-care-icon error' />
@@ -79,6 +97,10 @@ const ServicesList = () => {
                         <li>✓ Monitoring i proaktywne działanie</li>
                     </ul>
                 </div>
+                <Link
+                    to={ROUTER_PATH.SERVICES_ITCARE}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>
             <li>
                 <img src={iconPaths.cybersecurity} alt='cybersecurity icon error' />
@@ -92,11 +114,15 @@ const ServicesList = () => {
                         <li>✓ Audyty bezpieczeństwa i doradztwo</li>
                     </ul>
                 </div>
+                <Link
+                    to={ROUTER_PATH.SERVICES_CYBERSECURITY}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>
             <li>
                 <img src={iconPaths.backup} alt='backup icon error' />
                 <div className={styles.servicesListDiv}>
-                    <span>Backup danych</span>
+                    <span>Ochrona danych</span>
                     <p>Regularne kopie zapasowe to gwarancja ciągłości działania i ochrona przed utratą danych.</p>
                     <ul>
                         <li>✓ Backup lokalny i chmurowy</li>
@@ -105,6 +131,10 @@ const ServicesList = () => {
                         <li>✓ Testowanie i monitoring backupów</li>
                     </ul>
                 </div>
+                <Link
+                    to={ROUTER_PATH.SERVICES_BACKUPS}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>
             <li>
                 <img src={iconPaths.education} alt='education icon error' />
@@ -118,6 +148,10 @@ const ServicesList = () => {
                         <li>✓ Szkolenia dopasowane do Twojej firmy</li>
                     </ul>
                 </div>
+                <Link
+                    to={ROUTER_PATH.SERVICES_EDUCATION}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>
         </ul>
     )

@@ -1,6 +1,7 @@
 import styles from "./HomePageContent.module.scss"
 import HomePageContentThing from "../HomePageContentThing/HomePageContentThing.tsx";
 import {useMedia} from "use-media";
+import {ROUTER_PATH} from "../../routing/RouterPath.tsx";
 
 const things1 = (
     <>
@@ -37,13 +38,13 @@ const things3 = (
             img_name={'it-care-icon'}
             title={'Pomoc IT'}
             content={'Kompleksowa obsługa informatyczna i helpdesk dla Twojej firmy.'}
-            link={'/services'}
+            link={ROUTER_PATH.SERVICES_ITCARE}
         />
         <HomePageContentThing
             img_name={'cybersecurity-icon'}
             title={'Cyberbezpieczeństwo'}
             content={'Zabezpieczamy Twoje środowisko IT przed współczesnymi zagrożeniami.'}
-            link={'/services'}
+            link={ROUTER_PATH.SERVICES_CYBERSECURITY}
         />
     </>
 )
@@ -54,13 +55,13 @@ const things4 = (
             img_name={'backup-icon'}
             title={'Ochrona danych'}
             content={'Automatyczne kopie zapasowe i odzyskiwanie danych w razie awarii.'}
-            link={'/services'}
+            link={ROUTER_PATH.SERVICES_BACKUPS}
         />
         <HomePageContentThing
             img_name={'education-icon'}
             title={'Szkolenia'}
             content={'Szkolenia dla pracowników z zakresu cyberbezpieczeństwa i obsługi systemów.'}
-            link={'/services'}
+            link={ROUTER_PATH.SERVICES_EDUCATION}
         />
     </>
 )
@@ -71,14 +72,14 @@ const things5 = (
             img_name={'web-development-icon'}
             title={'Strony internetowe'}
             content={'Tworzymy nowoczesne, szybkie i responsywne strony internetowe dopasowane do Twojej firmy.'}
-            link={'/services'}
+            link={ROUTER_PATH.SERVICES_WEBSITES}
         />
 
         <HomePageContentThing
             img_name={'custom-software-icon'}
             title={'Dedykowane systemy'}
             content={'Projektujemy i wdrażamy indywidualne rozwiązania informatyczne dopasowane do potrzeb Twojego biznesu.'}
-            link={'/services'}
+            link={ROUTER_PATH.SERVICES_SOFTWARES}
         />
     </>
 )
@@ -89,14 +90,14 @@ const things6 = (
             img_name={'automation-icon'}
             title={'Automatyzacja'}
             content={'Automatyzujemy powtarzalne procesy, oszczędzając Twój czas i zwiększając efektywność pracy.'}
-            link={'/services'}
+            link={ROUTER_PATH.SERVICES_AUTOMATION}
         />
 
         <HomePageContentThing
             img_name={'integration-icon'}
             title={'Integracje systemów'}
             content={'Łączymy Twoje systemy i narzędzia, zapewniając płynny przepływ danych i lepszą współpracę.'}
-            link={'/services'}
+            link={ROUTER_PATH.SERVICES_INTEGRATION}
         />
     </>
 )
