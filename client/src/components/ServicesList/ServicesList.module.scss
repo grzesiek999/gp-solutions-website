@@ -11,6 +11,7 @@
   font-size: 22px;
   @media (max-width: 1279px) {
     margin-left: 50px;
+    font-size: clamp(20px, 2.3vw, 22px);
   }
   @media (max-width: 768px) {
     margin-left: clamp(30px, 5.5vw, 40px);
@@ -20,16 +21,16 @@
     margin-left: 20px;
     font-size: clamp(15px, 3.5vw, 17px);
   }
-  @media (max-width: 370px) {
+  @media (max-width: 389px) {
     margin: 0;
   }
 }
 
 .servicesListDiv span{
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   @media (max-width: 1279px) {
-    font-size: 32px;
+    font-size: clamp(30px, 3.2vw, 32px);
   }
   @media (max-width: 768px) {
     font-size: clamp(24px, 4.5vw, 32px);
@@ -37,7 +38,7 @@
   @media (max-width: 500px) {
     font-size: clamp(17px, 4.9vw, 24px);
   }
-  @media (max-width: 370px) {
+  @media (max-width: 389px) {
     width: 100%;
     margin-top: 20px;
     text-align: center;
@@ -57,7 +58,7 @@
     width: 100%;
     line-height: clamp(20px, 5.3vw, 26px);
   }
-  @media (max-width: 370px) {
+  @media (max-width: 389px) {
     width: 100%;
     text-align: center;
   }
@@ -69,7 +70,7 @@
   @media (max-width: 768px) {
     margin-bottom: clamp(10px, 2vw, 16px) !important;
   }
-  @media (max-width: 370px) {
+  @media (max-width: 389px) {
     width: 100%;
     text-align: center;
   }
