@@ -24,10 +24,10 @@
   margin-bottom: 45px;
   display: flex;
   color: $header-text-color;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   font-family: $font-main;
-  @media (max-width: 1020px) {
+  @media (max-width: 1279px) {
     font-size: 32px;
   }
   @media (max-width: 450px) {
@@ -50,11 +50,8 @@
   box-sizing: border-box;
   font-family: $font-main;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 15px;
-  @media (max-width: 1020px) {
-    font-size: 22px;
-  }
   @media (max-width: 450px) {
     font-size: 20px;
   }
@@ -66,17 +63,13 @@
 .contactPageFormDiv form input, textarea{
   margin-bottom: 35px;
   box-sizing: border-box;
-  padding: 12px 15px;
+  padding: 10px 15px;
   outline: none;
   font-family: $font-main;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 22px;
   border: 1px solid $contact-input-border-color;
   border-radius: 6px;
-  @media (max-width: 1020px) {
-    font-size: 22px;
-    padding: 10px 15px;
-  }
   @media (max-width: 450px) {
     font-size: 20px;
     padding: 9px 10px;
@@ -92,7 +85,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  @media (max-width: 1020px) {
+  @media (max-width: 1279px) {
     width: 85%;
   }
   @media (max-width: 768px) {
@@ -128,7 +121,7 @@
 .contactPageFormDiv form button span{
   font-family: $font-main;
   font-weight: 400;
-  font-size: clamp(24px, 1.8vw, 26px);
+  font-size: 24px;
   color: $footer-text-color;
   @media (max-width: 450px) {
     font-size: 20px;
@@ -139,7 +132,8 @@
 }
 
 .contactPageFormDiv form button img{
-  width: clamp(36px, 2.5vw, 40px);
+  width: 36px;
+  height: auto;
   margin-left: auto;
   @media (max-width: 450px) {
     margin: 0;
