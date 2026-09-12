@@ -35,7 +35,7 @@ const things3 = (
     <>
         <HomePageContentThing
             img_name={'it-care-icon'}
-            title={'Opieka IT'}
+            title={'Pomoc IT'}
             content={'Kompleksowa obsługa informatyczna i helpdesk dla Twojej firmy.'}
             link={'/services'}
         />
@@ -52,7 +52,7 @@ const things4 = (
     <>
         <HomePageContentThing
             img_name={'backup-icon'}
-            title={'Backup danych'}
+            title={'Ochrona danych'}
             content={'Automatyczne kopie zapasowe i odzyskiwanie danych w razie awarii.'}
             link={'/services'}
         />
@@ -60,6 +60,42 @@ const things4 = (
             img_name={'education-icon'}
             title={'Szkolenia'}
             content={'Szkolenia dla pracowników z zakresu cyberbezpieczeństwa i obsługi systemów.'}
+            link={'/services'}
+        />
+    </>
+)
+
+const things5 = (
+    <>
+        <HomePageContentThing
+            img_name={'web-development-icon'}
+            title={'Strony internetowe'}
+            content={'Tworzymy nowoczesne, szybkie i responsywne strony internetowe dopasowane do Twojej firmy.'}
+            link={'/services'}
+        />
+
+        <HomePageContentThing
+            img_name={'custom-software-icon'}
+            title={'Dedykowane systemy'}
+            content={'Projektujemy i wdrażamy indywidualne rozwiązania informatyczne dopasowane do potrzeb Twojego biznesu.'}
+            link={'/services'}
+        />
+    </>
+)
+
+const things6 = (
+    <>
+        <HomePageContentThing
+            img_name={'automation-icon'}
+            title={'Automatyzacja'}
+            content={'Automatyzujemy powtarzalne procesy, oszczędzając Twój czas i zwiększając efektywność pracy.'}
+            link={'/services'}
+        />
+
+        <HomePageContentThing
+            img_name={'integration-icon'}
+            title={'Integracje systemów'}
+            content={'Łączymy Twoje systemy i narzędzia, zapewniając płynny przepływ danych i lepszą współpracę.'}
             link={'/services'}
         />
     </>
@@ -79,12 +115,10 @@ const HomePageContent = () => {
                 <div className={styles.homePageContentMainPartThingsContainer}>
                     {isMobile ?
                         <>
-                            <div className={styles.mobileHomePageContentMainPartThingsContainerDiv}>
-                                {things1}
-                            </div>
-                            <div className={styles.mobileHomePageContentMainPartThingsContainerDiv}>
-                                {things2}
-                            </div>
+                            <ul>
+                                <li>{things1}</li>
+                                <li>{things2}</li>
+                            </ul>
                         </>:
                         <>
                             {things1}
@@ -95,19 +129,23 @@ const HomePageContent = () => {
             </div>
             <div className={styles.homePageContentMainPart}>
                 <span className={styles.homePageContentMainPartTitle}>Nasze usługi</span>
-                <div className={styles.homePageContentMainPartThingsContainer}>
+                <div className={styles.homePageContentServicesPartDiv}>
                     {isMobile ?
+                        <ul>
+                            <li>{things5}</li>
+                            <li>{things6}</li>
+                            <li>{things3}</li>
+                            <li>{things4}</li>
+                        </ul>:
                         <>
-                            <div className={styles.mobileHomePageContentMainPartThingsContainerDiv}>
-                                {things3}
+                            <div className={styles.homePageContentServisesThingsDiv}>
+                                {things5}
+                                {things6}
                             </div>
-                            <div className={styles.mobileHomePageContentMainPartThingsContainerDiv}>
+                            <div className={styles.homePageContentServisesThingsDiv}>
+                                {things3}
                                 {things4}
                             </div>
-                        </>:
-                        <>
-                            {things3}
-                            {things4}
                         </>
                     }
                 </div>

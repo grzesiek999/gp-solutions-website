@@ -19,12 +19,12 @@
 }
 
 .aboutUsPageInfoDiv span{
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   font-family: $font-main;
   margin-bottom: 30px;
   @media (max-width: 768px) {
-    font-size: clamp(27px, 5vw, 38px);
+    font-size: clamp(24px, 5vw, 32px);
     margin-bottom: 20px;
     text-align: center;
   }
@@ -34,15 +34,15 @@
 }
 
 .aboutUsPageInfoDiv p{
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
   font-family: $font-main;
   margin: 0;
   text-align: center;
   @media (max-width: 768px) {
-    font-size: clamp(22px, 4vw, 26px);
+    font-size: 20px;
   }
   @media (max-width: 370px) {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
