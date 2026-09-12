@@ -17,6 +17,45 @@ const HomePage = () => {
                     rel="canonical"
                     href="https://gpitsolutions.pl/"
                 />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "LocalBusiness",
+                        "name": "GP IT Solutions",
+                        "url": "https://gpitsolutions.pl/",
+                        "telephone": "+48608158611",
+                        "email": "grzegorz.pasich@o2.pl",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Dębowa 10",
+                            "postalCode": "32-340",
+                            "addressLocality": "Wolbrom",
+                            "addressRegion": "małopolskie",
+                            "addressCountry": "PL"
+                        },
+                        "areaServed": [
+                            { "@type": "City", "name": "Wolbrom" },
+                            { "@type": "City", "name": "Olkusz" },
+                            { "@type": "City", "name": "Kraków" },
+                            { "@type": "City", "name": "Miechów" },
+                            { "@type": "City", "name": "Skała" },
+                            { "@type": "City", "name": "Trzebinia" },
+                            { "@type": "City", "name": "Kielce" },
+                            { "@type": "City", "name": "Jędrzejów" },
+                            { "@type": "City", "name": "Sędziszów" },
+                            { "@type": "City", "name": "Katowice" },
+                            { "@type": "City", "name": "Gliwice" },
+                            { "@type": "City", "name": "Tychy" },
+                            { "@type": "City", "name": "Dąbrowa Górnicza" },
+                            { "@type": "City", "name": "Sosnowiec" },
+                            { "@type": "City", "name": "Sławków" },
+                            { "@type": "AdministrativeArea", "name": "Małopolskie" },
+                            { "@type": "AdministrativeArea", "name": "Śląskie" },
+                            { "@type": "AdministrativeArea", "name": "Świętokrzyskie" },
+                            { "@type": "Country", "name": "Polska" }
+                        ]
+                    })}
+                </script>
             </Helmet>
             <HomePageBanner />
             <HomePageContent />
