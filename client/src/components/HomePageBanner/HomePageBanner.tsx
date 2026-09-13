@@ -10,7 +10,7 @@ const HomePageBanner = () => {
 
     const contactButtonIconPath = '/icons/white-phone-icon.png';
     const checkServicesButtonIconPath = '/icons/white-mail-icon.png';
-    const backgroundImgPath = `url("/images/home_page_photo.webp")`
+    const backgroundImgPath = `url("/images/home_banner.webp")`
 
     return (
         <div className='pageBanner' style={{backgroundImage: backgroundImgPath}}>

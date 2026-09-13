@@ -1,7 +1,7 @@
 
 const AboutUsPageBanner = () => {
 
-    const backgroundImgPath = `url("/images/about_us_page_photo.webp")`
+    const backgroundImgPath = `url("/images/about_us_banner.webp")`
 
     return (
         <div className='pageBanner' style={{backgroundImage: backgroundImgPath}}>
