@@ -1,0 +1,23 @@
+import {Helmet} from "react-helmet-async";
+
+
+const ServicesEducationPage = () => {
+    return (
+        <>
+            <Helmet>
+                <title>Szkolenia GP IT Solutions</title>
+                <meta
+                    name="description"
+                    content="Kompleksowa obsługa IT dla firm — opieka informatyczna, cyberbezpieczeństwo, backup danych oraz szkolenia pracowników. Wsparcie stacjonarne i zdalne na terenie całej Polski."
+                />
+                <link
+                    rel="canonical"
+                    href="https://gpitsolutions.pl/services/education"
+                />
+            </Helmet>
+
+        </>
+    )
+}
+
+export default ServicesEducationPage
