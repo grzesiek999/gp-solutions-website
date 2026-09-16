@@ -1,8 +1,14 @@
-import ServicesPageBanner from "../../components/ServicesPageBanner/ServicesPageBanner.tsx";
 import ServicesPageContent from "../../components/ServicesPageContent/ServicesPageContent.tsx";
 import ServicesPageContact from "../../components/ServicesPageContact/ServicesPageContact.tsx";
 import {Helmet} from "react-helmet-async";
+import Banner from "../../components/Banner/Banner.tsx";
 
+const ServicesPageBannerContent =(
+    <>
+        <h1>Nasze usługi</h1>
+        <h6>Kompleksowa obsługa IT dopasowana do potrzeb Twojej firmy.</h6>
+    </>
+)
 
 const ServicesPage = () => {
     return (
@@ -18,7 +24,10 @@ const ServicesPage = () => {
                     href="https://gpitsolutions.pl/services"
                 />
             </Helmet>
-            <ServicesPageBanner />
+            <Banner
+                backgroundImgPath={`url("/images/services_banner.webp")`}
+                content={ServicesPageBannerContent}
+            />
             <ServicesPageContent />
             <ServicesPageContact />
         </>

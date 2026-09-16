@@ -1,9 +1,15 @@
-import AboutUsPageBanner from "../../components/AboutUsPageBanner/AboutUsPageBanner.tsx";
 import AboutUsPageContent from "../../components/AboutUsPageContent/AboutUsPageContent.tsx";
 import AboutUsPageStrengths from "../../components/AboutUsPageStrengths/AboutUsPageStrengths.tsx";
 import AboutUsPageInfo from "../../components/AboutUsPageInfo/AboutUsPageInfo.tsx";
 import {Helmet} from "react-helmet-async";
+import Banner from "../../components/Banner/Banner.tsx";
 
+const AboutUsPageBannerContent =(
+    <>
+        <h1>O nas</h1>
+        <h6>Poznaj GP IT Solutions</h6>
+    </>
+)
 
 const AboutUsPage = () => {
     return (
@@ -19,7 +25,10 @@ const AboutUsPage = () => {
                     href="https://gpitsolutions.pl/about_us"
                 />
             </Helmet>
-            <AboutUsPageBanner />
+            <Banner
+                backgroundImgPath={`url("/images/about_us_banner.webp")`}
+                content={AboutUsPageBannerContent}
+            />
             <AboutUsPageContent />
             <AboutUsPageStrengths />
             <AboutUsPageInfo />
