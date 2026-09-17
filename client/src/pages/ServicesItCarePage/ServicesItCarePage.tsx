@@ -1,5 +1,35 @@
 import {Helmet} from "react-helmet-async";
+import {useNavigate} from "react-router-dom";
+import Button from "../../components/Button/Button.tsx";
+import styles from "../HomePage/HomePage.module.scss";
+import Banner from "../../components/Banner/Banner.tsx";
 
+const ServicesItCarePageBannerContent =() => {
+    const navigate = useNavigate();
+
+    const contactButtonIconPath = '/icons/white-phone-icon.png';
+
+    return (
+        <>
+            <h1>Opieka IT</h1>
+            <h6>Kompleksowe wsparcie informatyczne, dzięki któremu Twoja firma działa bez zakłóceń.</h6>
+            <Button
+                className={styles.homePageBannerContactButton}
+                type={"button"}
+                onClick={() => navigate('/contact')}
+            >
+                <div className={styles.homePageBannerButtonDiv}>
+                    <img
+                        src={contactButtonIconPath}
+                        alt='white phone icon error'
+                        className={styles.homePageBannerButtonImg}
+                    />
+                    <span className={styles.homePageBannerButtonsSpan}>Skontaktuj się</span>
+                </div>
+            </Button>
+        </>
+    )
+}
 
 const ServicesItCarePage = () => {
     return (
@@ -8,13 +38,17 @@ const ServicesItCarePage = () => {
                 <title>Usługi GP IT Solutions</title>
                 <meta
                     name="description"
-                    content="Kompleksowa obsługa IT dla firm — opieka informatyczna, cyberbezpieczeństwo, backup danych oraz szkolenia pracowników. Wsparcie stacjonarne i zdalne na terenie całej Polski."
+                    content="Kompleksowa opieka IT dla firm. Zapewniamy bieżące wsparcie informatyczne, pomoc techniczną i sprawne działanie systemów oraz urządzeń."
                 />
                 <link
                     rel="canonical"
                     href="https://gpitsolutions.pl/services/itcare"
                 />
             </Helmet>
+            <Banner
+                backgroundImgPath={`url("/images/itcare_banner.webp")`}
+                content={<ServicesItCarePageBannerContent />}
+            />
         </>
     )
 }

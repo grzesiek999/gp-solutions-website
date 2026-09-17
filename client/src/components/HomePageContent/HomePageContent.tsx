@@ -76,10 +76,10 @@ const things5 = (
         />
 
         <HomePageContentThing
-            img_name={'custom-software-icon'}
+            img_name={'systems-icon'}
             title={'Dedykowane systemy'}
             content={'Projektujemy i wdrażamy indywidualne rozwiązania informatyczne dopasowane do potrzeb Twojego biznesu.'}
-            link={ROUTER_PATH.SERVICES_SOFTWARES}
+            link={ROUTER_PATH.SERVICES_SYSTEMS}
         />
     </>
 )
