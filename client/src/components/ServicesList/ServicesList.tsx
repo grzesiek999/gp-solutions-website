@@ -6,7 +6,7 @@ const ServicesList = () => {
 
     const iconPaths = {
         webDevelopment: '/icons/web-development-icon.png',
-        customSoftware: '/icons/custom-software-icon.png',
+        customSoftware: '/icons/systems-icon.png',
         automation: '/icons/automation-icon.png',
         integration: '/icons/integration-icon.png',
         itCare: '/icons/it-care-icon.png',
@@ -47,7 +47,7 @@ const ServicesList = () => {
                     </ul>
                 </div>
                 <Link
-                    to={ROUTER_PATH.SERVICES_SOFTWARES}
+                    to={ROUTER_PATH.SERVICES_SYSTEMS}
                     className={styles.seeMoreLink}
                 >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
             </li>

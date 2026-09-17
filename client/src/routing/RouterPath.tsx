@@ -3,7 +3,7 @@ export const ROUTER_PATH = {
 
     SERVICES: '/services',
     SERVICES_WEBSITES: '/services/websites',
-    SERVICES_SOFTWARES: '/services/softwares',
+    SERVICES_SYSTEMS: '/services/systems',
     SERVICES_AUTOMATION: '/services/automation',
     SERVICES_INTEGRATION: '/services/integration',
     SERVICES_ITCARE: '/services/itcare',

@@ -1,18 +1,18 @@
 import {Helmet} from "react-helmet-async";
 import Banner from "../../components/Banner/Banner.tsx";
-import styles from "../HomePage/HomePage.module.scss";
-import Button from "../../components/Button/Button.tsx";
 import {useNavigate} from "react-router-dom";
+import Button from "../../components/Button/Button.tsx";
+import styles from "../HomePage/HomePage.module.scss";
 
-const ServicesWebsitesPageBannerContent =() => {
+const ServicesSystemsPageBannerContent =() => {
     const navigate = useNavigate();
 
     const contactButtonIconPath = '/icons/white-phone-icon.png';
 
     return (
         <>
-            <h1>Strony internetowe</h1>
-            <h6>Nowoczesne i responsywne strony, które budują wizerunek Twojej firmy i przyciągają klientów.</h6>
+            <h1>Dedykowane systemy</h1>
+            <h6>Indywidualne rozwiązania dopasowane do procesów w Twojej firmie.</h6>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}
@@ -31,26 +31,26 @@ const ServicesWebsitesPageBannerContent =() => {
     )
 }
 
-const ServicesWebsitesPage = () => {
+const ServicesSystemsPage = () => {
     return (
         <>
             <Helmet>
                 <title>Usługi GP IT Solutions</title>
                 <meta
                     name="description"
-                    content="Projektujemy nowoczesne i responsywne strony internetowe dla firm. Szybkie, bezpieczne i dopasowane do Twojej marki oraz potrzeb klientów."
+                    content="Tworzymy dedykowane systemy i aplikacje dla firm, dopasowane do indywidualnych procesów, potrzeb i sposobu działania Twojego biznesu."
                 />
                 <link
                     rel="canonical"
-                    href="https://gpitsolutions.pl/services/websites"
+                    href="https://gpitsolutions.pl/services/softwares"
                 />
             </Helmet>
             <Banner
-                backgroundImgPath={`url("/images/websites_banner.webp")`}
-                content={<ServicesWebsitesPageBannerContent />}
+                backgroundImgPath={`url("/images/systems_banner.webp")`}
+                content={<ServicesSystemsPageBannerContent />}
             />
         </>
     )
 }
 
-export default ServicesWebsitesPage
+export default ServicesSystemsPage
