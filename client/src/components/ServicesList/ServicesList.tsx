@@ -1,8 +1,31 @@
 import styles from './ServicesList.module.scss'
 import {ROUTER_PATH} from "../../routing/RouterPath.tsx";
 import {Link} from "react-router-dom";
+import {useMedia} from "use-media";
+
+const SeeMoreLink = ({isUnderImg}:{isUnderImg: boolean}) => {
+    return (
+        <>
+            {isUnderImg ?
+                <Link
+                    to={ROUTER_PATH.SERVICES_WEBSITES}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &rarr;</Link>
+                :
+                <Link
+                    to={ROUTER_PATH.SERVICES_WEBSITES}
+                    className={styles.seeMoreLink}
+                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>}
+        </>
+    )
+}
 
 const ServicesList = () => {
+
+    const isUnderImg = useMedia({
+        minWidth: 390,
+        maxWidth: 1174
+    });
 
     const iconPaths = {
         webDevelopment: '/icons/web-development-icon.png',
@@ -18,7 +41,10 @@ const ServicesList = () => {
     return (
         <ul>
             <li>
-                <img src={iconPaths.webDevelopment} alt='web-development-icon error' />
+                <div className={styles.seeMoreLinkDiv}>
+                    <img src={iconPaths.webDevelopment} alt='web-development-icon error' />
+                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                </div>
                 <div className={styles.servicesListDiv}>
                     <span>Strony internetowe</span>
                     <p>Tworzymy nowoczesne strony internetowe, które przyciągają klientów i wspierają rozwój Twojego biznesu.</p>
@@ -29,13 +55,13 @@ const ServicesList = () => {
                         <li>✓ Optymalizacja pod kątem SEO i szybkości działania</li>
                     </ul>
                 </div>
-                <Link
-                    to={ROUTER_PATH.SERVICES_WEBSITES}
-                    className={styles.seeMoreLink}
-                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
+                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
             </li>
             <li>
-                <img src={iconPaths.customSoftware} alt='custom-software-icon error' />
+                <div className={styles.seeMoreLinkDiv}>
+                    <img src={iconPaths.customSoftware} alt='custom-software-icon error' />
+                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                </div>
                 <div className={styles.servicesListDiv}>
                     <span>Dedykowane systemy</span>
                     <p>Projektujemy i wdrażamy systemy dopasowane do indywidualnych potrzeb Twojej firmy.</p>
@@ -46,13 +72,13 @@ const ServicesList = () => {
                         <li>✓ Wsparcie i rozwój po wdrożeniu</li>
                     </ul>
                 </div>
-                <Link
-                    to={ROUTER_PATH.SERVICES_SYSTEMS}
-                    className={styles.seeMoreLink}
-                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
+                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
             </li>
             <li>
-                <img src={iconPaths.automation} alt='automation-icon error' />
+                <div className={styles.seeMoreLinkDiv}>
+                    <img src={iconPaths.automation} alt='automation-icon error' />
+                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                </div>
                 <div className={styles.servicesListDiv}>
                     <span>Automatyzacja</span>
                     <p>Automatyzujemy powtarzalne procesy, oszczędzając czas i redukując koszty w Twojej firmie.</p>
@@ -63,13 +89,13 @@ const ServicesList = () => {
                         <li>✓ Skrypty i boty usprawniające codzienną pracę</li>
                     </ul>
                 </div>
-                <Link
-                    to={ROUTER_PATH.SERVICES_AUTOMATION}
-                    className={styles.seeMoreLink}
-                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
+                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
             </li>
             <li>
-                <img src={iconPaths.integration} alt='integration-icon' />
+                <div className={styles.seeMoreLinkDiv}>
+                    <img src={iconPaths.integration} alt='integration-icon' />
+                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                </div>
                 <div className={styles.servicesListDiv}>
                     <span>Integracje systemów</span>
                     <p>Łączymy różne systemy i narzędzia w jedną spójną, sprawnie działającą całość.</p>
@@ -80,13 +106,13 @@ const ServicesList = () => {
                         <li>✓ Wsparcie przy migracji i wdrożeniu</li>
                     </ul>
                 </div>
-                <Link
-                    to={ROUTER_PATH.SERVICES_INTEGRATION}
-                    className={styles.seeMoreLink}
-                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
+                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
             </li>
             <li>
-                <img src={iconPaths.itCare} alt='it-care-icon error' />
+                <div className={styles.seeMoreLinkDiv}>
+                    <img src={iconPaths.itCare} alt='it-care-icon error' />
+                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                </div>
                 <div className={styles.servicesListDiv}>
                     <span>Opieka IT</span>
                     <p>Zapewniamy bierzące wsparcie dla użytkowników oraz zarządzanie infrastrukturą IT w twojej firmie.</p>
@@ -97,14 +123,14 @@ const ServicesList = () => {
                         <li>✓ Monitoring i proaktywne działanie</li>
                     </ul>
                 </div>
-                <Link
-                    to={ROUTER_PATH.SERVICES_ITCARE}
-                    className={styles.seeMoreLink}
-                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
+                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
             </li>
             <li>
-                <img src={iconPaths.cybersecurity} alt='cybersecurity icon error' />
-                <div className={styles.servicesListDiv}>
+                <div className={styles.seeMoreLinkDiv}>
+                    <img src={iconPaths.cybersecurity} alt='cybersecurity icon error' />
+                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                </div>
+                    <div className={styles.servicesListDiv}>
                     <span>Cyberbezpieczeństwo</span>
                     <p>Chronimy Twoją firmę przed zagrożeniami z internetu i pomagamy budować bezpieczne środowisko pracy.</p>
                     <ul>
@@ -114,13 +140,13 @@ const ServicesList = () => {
                         <li>✓ Audyty bezpieczeństwa i doradztwo</li>
                     </ul>
                 </div>
-                <Link
-                    to={ROUTER_PATH.SERVICES_CYBERSECURITY}
-                    className={styles.seeMoreLink}
-                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
+                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
             </li>
             <li>
-                <img src={iconPaths.backup} alt='backup icon error' />
+                <div className={styles.seeMoreLinkDiv}>
+                    <img src={iconPaths.backup} alt='backup icon error' />
+                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                </div>
                 <div className={styles.servicesListDiv}>
                     <span>Ochrona danych</span>
                     <p>Regularne kopie zapasowe to gwarancja ciągłości działania i ochrona przed utratą danych.</p>
@@ -131,14 +157,14 @@ const ServicesList = () => {
                         <li>✓ Testowanie i monitoring backupów</li>
                     </ul>
                 </div>
-                <Link
-                    to={ROUTER_PATH.SERVICES_BACKUPS}
-                    className={styles.seeMoreLink}
-                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
+                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
             </li>
             <li>
-                <img src={iconPaths.education} alt='education icon error' />
-                <div className={styles.servicesListDiv}>
+                <div className={styles.seeMoreLinkDiv}>
+                    <img src={iconPaths.education} alt='education icon error' />
+                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                </div>
+                    <div className={styles.servicesListDiv}>
                     <span>Szkolenia pracowników</span>
                     <p>Podnosimy świadomość i kompetencje Twojego zespołu w zakresie IT i cyberbezpieczeństwa.</p>
                     <ul>
@@ -148,10 +174,7 @@ const ServicesList = () => {
                         <li>✓ Szkolenia dopasowane do Twojej firmy</li>
                     </ul>
                 </div>
-                <Link
-                    to={ROUTER_PATH.SERVICES_EDUCATION}
-                    className={styles.seeMoreLink}
-                >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>
+                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
             </li>
         </ul>
     )
