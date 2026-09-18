@@ -12,7 +12,7 @@ const ServicesEducationPageBannerContent =() => {
     return (
         <>
             <h1>Szkolenia pracowników</h1>
-            <h6>Praktyczna wiedza, która zwiększa bezpieczeństwo i efektywność w Twojej firmie.</h6>
+            <h2>Praktyczna wiedza, która zwiększa bezpieczeństwo i efektywność w Twojej firmie.</h2>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}

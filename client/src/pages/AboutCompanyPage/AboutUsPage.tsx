@@ -7,7 +7,7 @@ import Banner from "../../components/Banner/Banner.tsx";
 const AboutUsPageBannerContent =(
     <>
         <h1>O nas</h1>
-        <h6>Poznaj GP IT Solutions</h6>
+        <h2>Poznaj GP IT Solutions</h2>
     </>
 )
 

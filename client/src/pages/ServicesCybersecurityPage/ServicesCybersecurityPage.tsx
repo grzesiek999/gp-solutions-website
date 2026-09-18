@@ -12,7 +12,7 @@ const ServicesCybersecurityPageBannerContent =() => {
     return (
         <>
             <h1>Cyberbezpieczeństwo</h1>
-            <h6>Chronimy Twoją firmę przed zagrożeniami i zapewniamy bezpieczeństwo danych.</h6>
+            <h2>Chronimy Twoją firmę przed zagrożeniami i zapewniamy bezpieczeństwo danych.</h2>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}

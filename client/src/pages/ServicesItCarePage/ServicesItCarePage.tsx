@@ -12,7 +12,7 @@ const ServicesItCarePageBannerContent =() => {
     return (
         <>
             <h1>Opieka IT</h1>
-            <h6>Kompleksowe wsparcie informatyczne, dzięki któremu Twoja firma działa bez zakłóceń.</h6>
+            <h2>Kompleksowe wsparcie informatyczne, dzięki któremu Twoja firma działa bez zakłóceń.</h2>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}

@@ -12,7 +12,7 @@ const ServicesBackupsPageBannerContent =() => {
     return (
         <>
             <h1>Ochrona danych</h1>
-            <h6>Regularne kopie zapasowe i skuteczne mechanizmy odzyskiwania danych.</h6>
+            <h2>Regularne kopie zapasowe i skuteczne mechanizmy odzyskiwania danych.</h2>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}

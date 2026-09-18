@@ -12,7 +12,7 @@ const ServicesIntegrationPageBannerContent =() => {
     return (
         <>
             <h1>Integracje systemów</h1>
-            <h6>Łączymy różne systemy i narzędzia w jedną spójną całość.</h6>
+            <h2>Łączymy różne systemy i narzędzia w jedną spójną całość.</h2>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}

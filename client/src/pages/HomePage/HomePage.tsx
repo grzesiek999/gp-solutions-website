@@ -20,9 +20,9 @@ const HomePageBannerContent = () => {
             <h1>Kompleksowa opieka IT dla firm</h1>
             {isMobile ?
                 <>
-                    <h6>Bezpieczeństwo. Niezawodność. Wsparcie. <br/>Skup się na swoim biznesie - <br/> my zajmiemy się IT.</h6>
+                    <h2>Bezpieczeństwo. Niezawodność. Wsparcie. <br/>Skup się na swoim biznesie - <br/> my zajmiemy się IT.</h2>
                 </>:
-                <h6>Bezpieczeństwo. Niezawodność. Wsparcie. <br /> Skup się na swoim biznesie - <br/> my zajmiemy się IT.</h6>
+                <h2>Bezpieczeństwo. Niezawodność. Wsparcie. <br /> Skup się na swoim biznesie - <br/> my zajmiemy się IT.</h2>
             }
             <div className={styles.homePageBannerButtonsDiv}>
                 <Button

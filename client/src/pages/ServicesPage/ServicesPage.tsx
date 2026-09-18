@@ -6,7 +6,7 @@ import Banner from "../../components/Banner/Banner.tsx";
 const ServicesPageBannerContent =(
     <>
         <h1>Nasze usługi</h1>
-        <h6>Kompleksowa obsługa IT dopasowana do potrzeb Twojej firmy.</h6>
+        <h2>Kompleksowa obsługa IT dopasowana do potrzeb Twojej firmy.</h2>
     </>
 )
 

@@ -6,7 +6,7 @@ import Banner from "../../components/Banner/Banner.tsx";
 const ContactPageBannerContent = (
     <>
         <h1>Kontakt</h1>
-        <h6>Skontaktuj się z nami - chętnie odpowiemy na Twoje pytania.</h6>
+        <h2>Skontaktuj się z nami - chętnie odpowiemy na Twoje pytania.</h2>
     </>
 )
 

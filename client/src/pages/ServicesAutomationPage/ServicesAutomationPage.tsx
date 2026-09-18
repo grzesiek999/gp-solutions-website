@@ -12,7 +12,7 @@ const ServicesAutomationPageBannerContent =() => {
     return (
         <>
             <h1>Automatyzacja</h1>
-            <h6>Automatyzujemy powtarzalne procesy, dzięki czemu oszczędzasz czas i redukujesz koszty.</h6>
+            <h2>Automatyzujemy powtarzalne procesy, dzięki czemu oszczędzasz czas i redukujesz koszty.</h2>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}

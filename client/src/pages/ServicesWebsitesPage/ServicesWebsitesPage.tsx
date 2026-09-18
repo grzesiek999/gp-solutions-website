@@ -3,6 +3,7 @@ import Banner from "../../components/Banner/Banner.tsx";
 import styles from "../HomePage/HomePage.module.scss";
 import Button from "../../components/Button/Button.tsx";
 import {useNavigate} from "react-router-dom";
+import ServicesWebsitesContent from "../../components/ServicesWebsitesContent/ServicesWebsitesContent.tsx";
 
 const ServicesWebsitesPageBannerContent =() => {
     const navigate = useNavigate();
@@ -12,7 +13,7 @@ const ServicesWebsitesPageBannerContent =() => {
     return (
         <>
             <h1>Strony internetowe</h1>
-            <h6>Nowoczesne i responsywne strony, które budują wizerunek Twojej firmy i przyciągają klientów.</h6>
+            <h2>Nowoczesne i responsywne strony, które budują wizerunek Twojej firmy i przyciągają klientów.</h2>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}
@@ -49,6 +50,7 @@ const ServicesWebsitesPage = () => {
                 backgroundImgPath={`url("/images/websites_banner.webp")`}
                 content={<ServicesWebsitesPageBannerContent />}
             />
+            <ServicesWebsitesContent />
         </>
     )
 }

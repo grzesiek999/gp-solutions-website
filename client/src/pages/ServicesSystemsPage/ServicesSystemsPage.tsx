@@ -12,7 +12,7 @@ const ServicesSystemsPageBannerContent =() => {
     return (
         <>
             <h1>Dedykowane systemy</h1>
-            <h6>Indywidualne rozwiązania dopasowane do procesów w Twojej firmie.</h6>
+            <h2>Indywidualne rozwiązania dopasowane do procesów w Twojej firmie.</h2>
             <Button
                 className={styles.homePageBannerContactButton}
                 type={"button"}
