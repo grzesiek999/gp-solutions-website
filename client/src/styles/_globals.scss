@@ -54,6 +54,144 @@ main {
   }
 }
 
+.servicesKindContentDiv {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 75px;
+  font-family: $font-main;
+  @media (max-width: 1279px) {
+    padding: 50px 50px;
+  }
+  @media (max-width: 768px) {
+    padding: 50px 35px;
+  }
+  @media (max-width: 500px) {
+    padding: 50px 20px;
+  }
+}
+
+.servicesKindSpan {
+  margin-bottom: 35px;
+  display: flex;
+  color: $header-text-color;
+  font-size: 36px;
+  font-weight: 600;
+  @media (max-width: 1279px) {
+    font-size: 32px;
+  }
+  @media (max-width: 450px) {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  @media (max-width: 300px) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.servicesKindContentRowDiv {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.what-offer-div {
+  width: 60%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.what-offer-div ul{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.why-worth-div {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: $services-kind-contentRowPart2Div-background;
+  border-radius: 20px;
+  padding: 50px 40px;
+  font-size: 24px;
+}
+
+.why-worth-div ul{
+  margin: 0;
+  padding: 0 0 0 25px;
+  list-style-type: none;
+}
+
+.why-worth-div ul li{
+  margin: 0 0 35px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.why-worth-div ul li:last-child{
+  margin: 0;
+}
+
+.servicesKindContentLastDiv {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicesKindContentLastDiv ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.servicesKindContentLastDiv ul li{
+  margin: 0;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: $services-kind-contentRowPart2Div-background;
+  border-radius: 40px;
+}
+
+.circle-span-number {
+  margin: 0 30px 0 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $footer-text-color;
+  background-color: $services-page-seemore-link;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.servicesKindContentLastDiv p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin: 0;
+}
+
 h1 {
   margin: 0;
   color: $footer-text-color;
