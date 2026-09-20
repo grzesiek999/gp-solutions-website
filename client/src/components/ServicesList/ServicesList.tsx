@@ -3,17 +3,17 @@ import {ROUTER_PATH} from "../../routing/RouterPath.tsx";
 import {Link} from "react-router-dom";
 import {useMedia} from "use-media";
 
-const SeeMoreLink = ({isUnderImg}:{isUnderImg: boolean}) => {
+const SeeMoreLink = ({path, isUnderImg}:{path: string, isUnderImg: boolean}) => {
     return (
         <>
             {isUnderImg ?
                 <Link
-                    to={ROUTER_PATH.SERVICES_WEBSITES}
+                    to={path}
                     className={styles.seeMoreLink}
                 >Zobacz szczegóły &rarr;</Link>
                 :
                 <Link
-                    to={ROUTER_PATH.SERVICES_WEBSITES}
+                    to={path}
                     className={styles.seeMoreLink}
                 >Zobacz szczegóły &nbsp;&nbsp;&nbsp;&rarr;</Link>}
         </>
@@ -43,7 +43,7 @@ const ServicesList = () => {
             <li>
                 <div className={styles.seeMoreLinkDiv}>
                     <img src={iconPaths.webDevelopment} alt='web-development-icon error' />
-                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                    {isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_WEBSITES} isUnderImg={isUnderImg} />}
                 </div>
                 <div className={styles.servicesListDiv}>
                     <span>Strony internetowe</span>
@@ -55,12 +55,12 @@ const ServicesList = () => {
                         <li>✓ Optymalizacja pod kątem SEO i szybkości działania</li>
                     </ul>
                 </div>
-                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                {!isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_WEBSITES} isUnderImg={isUnderImg} />}
             </li>
             <li>
                 <div className={styles.seeMoreLinkDiv}>
                     <img src={iconPaths.customSoftware} alt='custom-software-icon error' />
-                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                    {isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_SYSTEMS} isUnderImg={isUnderImg} />}
                 </div>
                 <div className={styles.servicesListDiv}>
                     <span>Dedykowane systemy</span>
@@ -72,12 +72,12 @@ const ServicesList = () => {
                         <li>✓ Wsparcie i rozwój po wdrożeniu</li>
                     </ul>
                 </div>
-                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                {!isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_SYSTEMS} isUnderImg={isUnderImg} />}
             </li>
             <li>
                 <div className={styles.seeMoreLinkDiv}>
                     <img src={iconPaths.automation} alt='automation-icon error' />
-                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                    {isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_AUTOMATION} isUnderImg={isUnderImg} />}
                 </div>
                 <div className={styles.servicesListDiv}>
                     <span>Automatyzacja</span>
@@ -89,12 +89,12 @@ const ServicesList = () => {
                         <li>✓ Skrypty i boty usprawniające codzienną pracę</li>
                     </ul>
                 </div>
-                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                {!isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_AUTOMATION} isUnderImg={isUnderImg} />}
             </li>
             <li>
                 <div className={styles.seeMoreLinkDiv}>
                     <img src={iconPaths.integration} alt='integration-icon' />
-                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                    {isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_INTEGRATION} isUnderImg={isUnderImg} />}
                 </div>
                 <div className={styles.servicesListDiv}>
                     <span>Integracje systemów</span>
@@ -106,12 +106,12 @@ const ServicesList = () => {
                         <li>✓ Wsparcie przy migracji i wdrożeniu</li>
                     </ul>
                 </div>
-                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                {!isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_INTEGRATION} isUnderImg={isUnderImg} />}
             </li>
             <li>
                 <div className={styles.seeMoreLinkDiv}>
                     <img src={iconPaths.itCare} alt='it-care-icon error' />
-                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                    {isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_ITCARE} isUnderImg={isUnderImg} />}
                 </div>
                 <div className={styles.servicesListDiv}>
                     <span>Opieka IT</span>
@@ -123,12 +123,12 @@ const ServicesList = () => {
                         <li>✓ Monitoring i proaktywne działanie</li>
                     </ul>
                 </div>
-                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                {!isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_ITCARE} isUnderImg={isUnderImg} />}
             </li>
             <li>
                 <div className={styles.seeMoreLinkDiv}>
                     <img src={iconPaths.cybersecurity} alt='cybersecurity icon error' />
-                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                    {isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_CYBERSECURITY} isUnderImg={isUnderImg} />}
                 </div>
                     <div className={styles.servicesListDiv}>
                     <span>Cyberbezpieczeństwo</span>
@@ -140,12 +140,12 @@ const ServicesList = () => {
                         <li>✓ Audyty bezpieczeństwa i doradztwo</li>
                     </ul>
                 </div>
-                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                {!isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_CYBERSECURITY} isUnderImg={isUnderImg} />}
             </li>
             <li>
                 <div className={styles.seeMoreLinkDiv}>
                     <img src={iconPaths.backup} alt='backup icon error' />
-                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                    {isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_BACKUPS} isUnderImg={isUnderImg} />}
                 </div>
                 <div className={styles.servicesListDiv}>
                     <span>Ochrona danych</span>
@@ -157,12 +157,12 @@ const ServicesList = () => {
                         <li>✓ Testowanie i monitoring backupów</li>
                     </ul>
                 </div>
-                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                {!isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_BACKUPS} isUnderImg={isUnderImg} />}
             </li>
             <li>
                 <div className={styles.seeMoreLinkDiv}>
                     <img src={iconPaths.education} alt='education icon error' />
-                    {isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                    {isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_EDUCATION} isUnderImg={isUnderImg} />}
                 </div>
                     <div className={styles.servicesListDiv}>
                     <span>Szkolenia pracowników</span>
@@ -174,7 +174,7 @@ const ServicesList = () => {
                         <li>✓ Szkolenia dopasowane do Twojej firmy</li>
                     </ul>
                 </div>
-                {!isUnderImg && <SeeMoreLink isUnderImg={isUnderImg} />}
+                {!isUnderImg && <SeeMoreLink path={ROUTER_PATH.SERVICES_EDUCATION} isUnderImg={isUnderImg} />}
             </li>
         </ul>
     )

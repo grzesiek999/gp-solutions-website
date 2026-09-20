@@ -96,6 +96,7 @@ main {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .what-offer-div {
@@ -114,8 +115,40 @@ main {
   list-style-type: none;
 }
 
+.what-offer-div ul li{
+  margin: 0 0 50px 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.what-offer-div img{
+  width: auto;
+  height: 90px;
+  margin-right: 50px;
+}
+
+.what-offer-div div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.what-offer-div ul li span{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.what-offer-div ul li p{
+  margin: 0;
+  font-size: 22px;
+}
+
 .why-worth-div {
   width: 40%;
+  height: fit-content;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

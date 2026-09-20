@@ -1,16 +1,54 @@
 
 
 const WebsitesOffersList = () => {
+
+    const icons = {
+        bussiness_websites: 'bussiness_websites',
+        company_websites: 'company_websites',
+        seo_optimization: 'seo_optimization',
+        technical_support: 'technical_support',
+    }
+
     return (
         <ul>
             <li>
                 <img
-                    src={`/icons/${img}.png`}
-                    alt={`${img} icon error`}
+                    src={`/icons/${icons.bussiness_websites}.png`}
+                    alt={`${icons.bussiness_websites} icon error`}
                 />
                 <div>
                     <span>Strony wizytówkowe</span>
                     <p>Nowoczesny design i pełna responsywność.</p>
+                </div>
+            </li>
+            <li>
+                <img
+                    src={`/icons/${icons.company_websites}.png`}
+                    alt={`${icons.company_websites} icon error`}
+                />
+                <div>
+                    <span>Strony firmowe</span>
+                    <p>Rozbudowane serwisy z CMS.</p>
+                </div>
+            </li>
+            <li>
+                <img
+                    src={`/icons/${icons.seo_optimization}.png`}
+                    alt={`${icons.seo_optimization} icon error`}
+                />
+                <div>
+                    <span>Optymalizacja SEO</span>
+                    <p>Lepsza widoczność w wyszukiwarkach.</p>
+                </div>
+            </li>
+            <li>
+                <img
+                    src={`/icons/${icons.technical_support}.png`}
+                    alt={`${icons.technical_support} icon error`}
+                />
+                <div>
+                    <span>Wsparcie techniczne</span>
+                    <p>Pomoc po wdrożeniu i rozwój strony.</p>
                 </div>
             </li>
         </ul>
