@@ -3,6 +3,7 @@ import Banner from "../../components/Banner/Banner.tsx";
 import {useNavigate} from "react-router-dom";
 import Button from "../../components/Button/Button.tsx";
 import styles from "../HomePage/HomePage.module.scss";
+import ServicesSystemsContent from "../../components/ServicesSystemsContent/ServicesSystemsContent.tsx";
 
 const ServicesSystemsPageBannerContent =() => {
     const navigate = useNavigate();
@@ -49,6 +50,7 @@ const ServicesSystemsPage = () => {
                 backgroundImgPath={`url("/images/systems_banner.webp")`}
                 content={<ServicesSystemsPageBannerContent />}
             />
+            <ServicesSystemsContent />
         </>
     )
 }

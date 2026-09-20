@@ -3,6 +3,7 @@ import Banner from "../../components/Banner/Banner.tsx";
 import {useNavigate} from "react-router-dom";
 import Button from "../../components/Button/Button.tsx";
 import styles from "../HomePage/HomePage.module.scss";
+import ServicesAutomationContent from "../../components/ServicesAutomationContent/ServicesAutomationContent.tsx";
 
 const ServicesAutomationPageBannerContent =() => {
     const navigate = useNavigate();
@@ -49,6 +50,7 @@ const ServicesAutomationPage = () => {
                 backgroundImgPath={`url("/images/automation_banner.webp")`}
                 content={<ServicesAutomationPageBannerContent />}
             />
+            <ServicesAutomationContent />
         </>
     )
 }
