@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 import Button from "../../components/Button/Button.tsx";
 import styles from "../HomePage/HomePage.module.scss";
 import Banner from "../../components/Banner/Banner.tsx";
+import ServicesIntegrationContent from "../../components/ServicesIntegrationContent/ServicesIntegrationContent.tsx";
 
 const ServicesIntegrationPageBannerContent =() => {
     const navigate = useNavigate();
@@ -49,6 +50,7 @@ const ServicesIntegrationPage = () => {
                 backgroundImgPath={`url("/images/integration_banner.webp")`}
                 content={<ServicesIntegrationPageBannerContent />}
             />
+            <ServicesIntegrationContent />
         </>
     )
 }
