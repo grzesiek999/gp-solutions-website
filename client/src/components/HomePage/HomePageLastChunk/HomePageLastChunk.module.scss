@@ -1,0 +1,145 @@
+@use '../../../styles/variables' as *;
+
+.homePageLastChunkDiv{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 125px 40px 125px;
+  background-color: $home-page-last-chunk-border-color;
+  @media (max-width: 1280px) {
+    padding: 50px 50px 40px 50px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 50px 35px 40px 35px;
+  }
+  @media (max-width: 500px) {
+    padding: 25px 20px 20px 20px;
+  }
+}
+
+.homePageLastChunkPart1 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.homePageLastChunkPart2 {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePageLastChunkPart1 span{
+  box-sizing: border-box;
+  display: flex;
+  font-family: $home-page-banner-font;
+  color: $footer-text-color;
+}
+
+.homePageLastChunkPart1MainSpan {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 52px;
+  @media (max-width: 1280px) {
+    font-size: clamp(30px, 3vw, 34px);
+    line-height: clamp(46px, 4vw, 50px);
+  }
+  @media (max-width: 768px) {
+    font-size: clamp(22px, 5vw, 36px);
+    line-height: clamp(38px, 6vw, 52px);
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    line-height: 38px;
+  }
+}
+
+.homePageLastChunkPart1SecondarySpan {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  @media (max-width: 1280px) {
+    font-size: clamp(20px, 2.5vw, 22px);
+    line-height: clamp(34px, 3vw, 36px);
+  }
+  @media (max-width: 768px) {
+    font-size: clamp(20px, 4vw, 24px);
+    line-height: clamp(36px, 5vw, 40px);
+  }
+  @media (max-width: 500px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.homePageLastChunkContactButton {
+  margin: 0;
+  width: 325px;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: $home-page-button-blue;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  @media (max-width: 1280px) {
+    margin-left: 10px;
+    width: clamp(275px, 35vw, 325px);
+    height: 80px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 40px 0 0 0;
+    height: clamp(60px, 12vw, 80px);
+  }
+  @media (max-width: 500px) {
+    margin: 25px 0 0 0;
+    height: 50px;
+    border-radius: 8px;
+  }
+}
+
+.homePageLastChunkContactButton div{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+  @media (max-width: 500px) {
+    padding: 10px;
+  }
+}
+
+.homePageLastChunkContactButton img{
+  height: 30px;
+  margin-right: 10px;
+  @media (max-width: 768px) {
+    height: clamp(26px, 5vw, 30px);
+  }
+  @media (max-width: 500px) {
+    height: 22px;
+  }
+}
+
+.homePageLastChunkContactButtonSpan {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  color: $footer-text-color;
+  font-family: $home-page-banner-font;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  @media (max-width: 768px) {
+    font-size: clamp(24px, 4vw, 28px);
+    line-height: clamp(26px, 5vw, 30px);
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

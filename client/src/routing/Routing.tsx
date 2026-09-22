@@ -3,16 +3,16 @@ import {RouterProvider, createBrowserRouter, Route, createRoutesFromElements} fr
 import WebsiteLayout from "../layouts/WebsiteLayout/WebsiteLayout.tsx";
 import HomePage from "../pages/HomePage/HomePage.tsx";
 import ContactPage from "../pages/ContactPage/ContactPage.tsx";
-import AboutUsPage from "../pages/AboutCompanyPage/AboutUsPage.tsx";
-import ServicesPage from "../pages/ServicesPage/ServicesPage.tsx";
-import ServicesWebsitesPage from "../pages/ServicesWebsitesPage/ServicesWebsitesPage.tsx";
-import ServicesAutomationPage from "../pages/ServicesAutomationPage/ServicesAutomationPage.tsx";
-import ServicesIntegrationPage from "../pages/ServicesIntegrationPage/ServicesIntegrationPage.tsx";
-import ServicesItCarePage from "../pages/ServicesItCarePage/ServicesItCarePage.tsx";
-import ServicesCybersecurityPage from "../pages/ServicesCybersecurityPage/ServicesCybersecurityPage.tsx";
-import ServicesBackupsPage from "../pages/ServicesBackupsPage/ServicesBackupsPage.tsx";
-import ServicesEducationPage from "../pages/ServicesEducationPage/ServicesEducationPage.tsx";
-import ServicesSystemsPage from "../pages/ServicesSystemsPage/ServicesSystemsPage.tsx";
+import ServicesPage from "../pages/ServicesPages/ServicesPage.tsx";
+import ServicesWebsitesPage from "../pages/ServicesPages/ServicesWebsitesPage.tsx";
+import ServicesSystemsPage from "../pages/ServicesPages/ServicesSystemsPage.tsx";
+import ServicesAutomationPage from "../pages/ServicesPages/ServicesAutomationPage.tsx";
+import ServicesIntegrationPage from "../pages/ServicesPages/ServicesIntegrationPage.tsx";
+import ServicesItCarePage from "../pages/ServicesPages/ServicesItCarePage.tsx";
+import ServicesCybersecurityPage from "../pages/ServicesPages/ServicesCybersecurityPage.tsx";
+import ServicesBackupsPage from "../pages/ServicesPages/ServicesBackupsPage.tsx";
+import ServicesEducationPage from "../pages/ServicesPages/ServicesEducationPage.tsx";
+import AboutUsPage from "../pages/AboutUsPage/AboutUsPage.tsx";
 
 
 const ROUTER = createBrowserRouter(

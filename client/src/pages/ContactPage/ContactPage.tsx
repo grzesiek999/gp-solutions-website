@@ -1,7 +1,7 @@
-import ContactPageContent from "../../components/ContactPageContent/ContactPageContent.tsx";
-import ContactPageMap from "../../components/ContactPageMap/ContactPageMap.tsx";
 import {Helmet} from "react-helmet-async";
 import Banner from "../../components/Banner/Banner.tsx";
+import ContactPageContent from "../../components/ContactPage/ContactPageContent/ContactPageContent.tsx";
+import ContactPageMap from "../../components/ContactPage/ContactPageMap/ContactPageMap.tsx";
 
 const ContactPageBannerContent = (
     <>

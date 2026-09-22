@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss'
-import Copyright from "../Copyright/Copyright.tsx";
-import FooterInformation from "../FooterInformation/FooterInformation.tsx";
+import Copyright from "./Copyright/Copyright.tsx";
+import FooterInformation from "./FooterInformation/FooterInformation.tsx";
 
 const Footer = () => {
     return (

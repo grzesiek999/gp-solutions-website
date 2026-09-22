@@ -1,11 +1,11 @@
-import HomePageContent from "../../components/HomePageContent/HomePageContent.tsx";
-import HomePageLastChunk from "../../components/HomePageLastChunk/HomePageLastChunk.tsx";
 import {Helmet} from "react-helmet-async";
 import Banner from "../../components/Banner/Banner.tsx";
 import Button from "../../components/Button/Button.tsx";
 import {useNavigate} from "react-router-dom";
 import {useMedia} from "use-media";
 import styles from "./HomePage.module.scss";
+import HomePageContent from "../../components/HomePage/HomePageContent/HomePageContent.tsx";
+import HomePageLastChunk from "../../components/HomePage/HomePageLastChunk/HomePageLastChunk.tsx";
 
 
 const HomePageBannerContent = () => {
