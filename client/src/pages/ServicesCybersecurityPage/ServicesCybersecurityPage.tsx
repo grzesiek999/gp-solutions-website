@@ -3,6 +3,8 @@ import {useNavigate} from "react-router-dom";
 import Button from "../../components/Button/Button.tsx";
 import styles from "../HomePage/HomePage.module.scss";
 import Banner from "../../components/Banner/Banner.tsx";
+import ServicesCybersecurityContent
+    from "../../components/ServicesCybersecurityContent/ServicesCybersecurityContent.tsx";
 
 const ServicesCybersecurityPageBannerContent =() => {
     const navigate = useNavigate();
@@ -49,6 +51,7 @@ const ServicesCybersecurityPage = () => {
                 backgroundImgPath={`url("/images/cybersecurity_banner.webp")`}
                 content={<ServicesCybersecurityPageBannerContent />}
             />
+            <ServicesCybersecurityContent />
         </>
     )
 }

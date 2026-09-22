@@ -55,7 +55,7 @@ const WebsitesOffersList = () => {
     )
 }
 
-const ServicesWebsitesContent = () => {
+const ServicesIntegrationContent = () => {
 
     return (
         <div className='servicesKindContentDiv'>
@@ -100,4 +100,4 @@ const ServicesWebsitesContent = () => {
     )
 }
 
-export default ServicesWebsitesContent;
+export default ServicesIntegrationContent;
