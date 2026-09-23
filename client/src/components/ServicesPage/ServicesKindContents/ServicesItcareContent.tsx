@@ -4,9 +4,9 @@ const WebsitesOffersList = () => {
 
     const icons = {
         technical_support: 'technical_support',
-        configuration: 'configuration',
-        management: 'management',
-        monitoring: 'monitoring',
+        indyvidual_solutions: 'indyvidual_solutions',
+        manage_company: 'manage_company',
+        raports: 'raports',
     }
 
     return (
@@ -23,8 +23,8 @@ const WebsitesOffersList = () => {
             </li>
             <li>
                 <img
-                    src={`/icons/${icons.configuration}.png`}
-                    alt={`${icons.configuration} icon error`}
+                    src={`/icons/${icons.indyvidual_solutions}.png`}
+                    alt={`${icons.indyvidual_solutions} icon error`}
                 />
                 <div>
                     <span>Konfiguracja urządzeń</span>
@@ -33,8 +33,8 @@ const WebsitesOffersList = () => {
             </li>
             <li>
                 <img
-                    src={`/icons/${icons.management}.png`}
-                    alt={`${icons.management} icon error`}
+                    src={`/icons/${icons.manage_company}.png`}
+                    alt={`${icons.manage_company} icon error`}
                 />
                 <div>
                     <span>Zarządzanie infrastrukturą</span>
@@ -43,8 +43,8 @@ const WebsitesOffersList = () => {
             </li>
             <li>
                 <img
-                    src={`/icons/${icons.monitoring}.png`}
-                    alt={`${icons.monitoring} icon error`}
+                    src={`/icons/${icons.raports}.png`}
+                    alt={`${icons.raports} icon error`}
                 />
                 <div>
                     <span>Proaktywne monitorowanie</span>

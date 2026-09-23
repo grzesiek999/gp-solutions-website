@@ -17,7 +17,7 @@ const WebsitesOffersList = () => {
                     alt={`${icons.work_station} icon error`}
                 />
                 <div>
-                    <span>Zanezpieczanie stacji roboczych</span>
+                    <span>Zabezpieczanie stacji roboczych</span>
                     <p>Antywirus, polityki bezpieczeństwa.</p>
                 </div>
             </li>

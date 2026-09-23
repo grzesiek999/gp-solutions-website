@@ -4,9 +4,9 @@ const WebsitesOffersList = () => {
 
     const icons = {
         external_systems: 'external_systems',
-        api: 'api',
-        synchronization: 'synchronization',
-        integrations: 'integrations',
+        groving_maintenace: 'groving_maintenace',
+        seo_optimization: 'seo_optimization',
+        external_integrations: 'external_integrations',
     }
 
     return (
@@ -23,8 +23,8 @@ const WebsitesOffersList = () => {
             </li>
             <li>
                 <img
-                    src={`/icons/${icons.api}.png`}
-                    alt={`${icons.api} icon error`}
+                    src={`/icons/${icons.groving_maintenace}.png`}
+                    alt={`${icons.groving_maintenace} icon error`}
                 />
                 <div>
                     <span>API i wymiana danych</span>
@@ -33,8 +33,8 @@ const WebsitesOffersList = () => {
             </li>
             <li>
                 <img
-                    src={`/icons/${icons.synchronization}.png`}
-                    alt={`${icons.synchronization} icon error`}
+                    src={`/icons/${icons.seo_optimization}.png`}
+                    alt={`${icons.seo_optimization} icon error`}
                 />
                 <div>
                     <span>Synchronizacja danych</span>
@@ -43,8 +43,8 @@ const WebsitesOffersList = () => {
             </li>
             <li>
                 <img
-                    src={`/icons/${icons.integrations}.png`}
-                    alt={`${icons.integrations} icon error`}
+                    src={`/icons/${icons.external_integrations}.png`}
+                    alt={`${icons.external_integrations} icon error`}
                 />
                 <div>
                     <span>Indywidualne integracje</span>
