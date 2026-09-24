@@ -1,6 +1,8 @@
 @use '../../styles/variables' as *;
 
 .websiteLayoutNavContainer {
+  position: relative;
+  z-index: 101;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -18,6 +20,8 @@
 }
 
 .websiteLayoutNavContainer nav{
+  position: relative;
+  z-index: 102;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -30,6 +34,8 @@
 }
 
 .websiteLayoutNavContainer ul {
+  position: relative;
+  z-index: 103;
   margin: 0;
   padding: 0;
   display: flex;
@@ -43,13 +49,12 @@
 }
 
 .websiteLayoutNavContainer li {
+  position: relative;
+  z-index: 104;
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 0 clamp(30px, 2.5vw, 50px);
-  transition: all 0.4s ease-in-out;
-  &:hover {
-    scale: 1.1;
-  }
   @media (max-width: 1280px) {
     margin: 0 clamp(10px, 1.8vw, 30px);
   }
@@ -59,9 +64,6 @@
     margin: 0;
     display: flex;
     border-bottom: 1px solid $header-border-color;
-  &:hover {
-    scale: unset;
-  }
   }
   @media (max-width: 500px) {
     height: 60px;
@@ -69,12 +71,18 @@
 }
 
 .websiteLayoutNavContainer a {
+  position: relative;
+  z-index: 105;
   text-decoration: none;
   color: $header-text-color;
   font-family: $font-main;
   font-size: clamp(20px, 1.5vw, 24px);
   font-weight: 600;
   text-align: center;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    scale: 1.1;
+  }
   @media (max-width: 1280px) {
     font-size: clamp(16px, 1.6vw, 20px);
   }
@@ -85,6 +93,9 @@
     justify-content: center;
     align-items: center;
     font-size: 28px;
+    &:hover {
+      scale: unset;
+    }
   }
   @media (max-width: 500px) {
     width: 100%;
@@ -100,6 +111,63 @@
   transition: all 0.4s ease-in-out;
   color: $header-active-page-text-color !important;
   font-weight: 700;
+}
+
+.servicesListDiv {
+  padding-top: 50px;
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
+
+.websiteLayoutNavContainer li:hover .servicesListDiv {
+  display: block;
+}
+
+.servicesListDiv ul{
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 18vw;
+  box-shadow: 0px 10px 12px 0px $header-shadow;
+  -webkit-box-shadow: 0px 10px 12px 0px $header-shadow;
+  -moz-box-shadow: 0px 10px 12px 0px $header-shadow;
+  @media (max-width: 1280px) {
+    width: 19vw;
+  }
+}
+
+.servicesListDiv ul li{
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 16vw;
+  border-bottom: 1px solid $header-border-color;
+  &:hover {
+    scale: none !important;
+  }
+  @media (max-width: 1280px) {
+    width: 18vw;
+  }
+}
+
+.servicesListDiv ul li a {
+  text-decoration: none;
+  color: $header-text-color;
+  font-family: $font-main;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  @media (max-width: 1280px) {
+    padding: 15px 0;
+    font-size: clamp(12px, 1.6vw, 20px);
+  }
 }
 
 .footerNavContainerDiv ul {
