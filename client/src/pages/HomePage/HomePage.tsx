@@ -1,8 +1,62 @@
-import HomePageBanner from "../../components/HomePageBanner/HomePageBanner.tsx";
-import HomePageContent from "../../components/HomePageContent/HomePageContent.tsx";
-import HomePageLastChunk from "../../components/HomePageLastChunk/HomePageLastChunk.tsx";
 import {Helmet} from "react-helmet-async";
+import Banner from "../../components/Banner/Banner.tsx";
+import Button from "../../components/Button/Button.tsx";
+import {useNavigate} from "react-router-dom";
+import {useMedia} from "use-media";
+import styles from "./HomePage.module.scss";
+import HomePageContent from "../../components/HomePage/HomePageContent/HomePageContent.tsx";
+import HomePageLastChunk from "../../components/HomePage/HomePageLastChunk/HomePageLastChunk.tsx";
 
+
+const HomePageBannerContent = () => {
+    const navigate = useNavigate();
+    const isMobile = useMedia({ maxWidth: 768 });
+
+    const contactButtonIconPath = '/icons/white-phone-icon.png';
+    const checkServicesButtonIconPath = '/icons/white-mail-icon.png';
+
+    return (
+        <>
+            <h1>Kompleksowa opieka IT dla firm</h1>
+            {isMobile ?
+                <>
+                    <h2>Bezpieczeństwo. Niezawodność. Wsparcie. <br/>Skup się na swoim biznesie - <br/> my zajmiemy się IT.</h2>
+                </>:
+                <h2>Bezpieczeństwo. Niezawodność. Wsparcie. <br /> Skup się na swoim biznesie - <br/> my zajmiemy się IT.</h2>
+            }
+            <div className={styles.homePageBannerButtonsDiv}>
+                <Button
+                    className={styles.homePageBannerContactButton}
+                    type={"button"}
+                    onClick={()=> navigate('/contact')}
+                >
+                    <div className={styles.homePageBannerButtonDiv}>
+                        <img
+                            src={contactButtonIconPath}
+                            alt='white phone icon error'
+                            className={styles.homePageBannerButtonImg}
+                        />
+                        <span className={styles.homePageBannerButtonsSpan}>Skontaktuj się</span>
+                    </div>
+                </Button>
+                <Button
+                    className={styles.homePageBannerCheckServicesButton}
+                    type={"button"}
+                    onClick={()=> navigate('/services')}
+                >
+                    <div className={styles.homePageBannerButtonDiv}>
+                        <img
+                            src={checkServicesButtonIconPath}
+                            alt='white mail icon error'
+                            className={styles.homePageBannerButtonImg}
+                        />
+                        <span className={styles.homePageBannerButtonsSpan}>Sprawdź usługi</span>
+                    </div>
+                </Button>
+            </div>
+        </>
+    )
+}
 
 const HomePage = () => {
     return (
@@ -57,7 +111,10 @@ const HomePage = () => {
                     })}
                 </script>
             </Helmet>
-            <HomePageBanner />
+            <Banner
+                backgroundImgPath={`url("/images/home_banner.webp")`}
+                content={<HomePageBannerContent />}
+            />
             <HomePageContent />
             <HomePageLastChunk />
         </>

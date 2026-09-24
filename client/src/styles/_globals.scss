@@ -54,6 +54,303 @@ main {
   }
 }
 
+.servicesKindContentDiv {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 75px;
+  font-family: $font-main;
+  @media (max-width: 1600px) {
+  padding-bottom: 0;
+  }
+  @media (max-width: 1279px) {
+    padding: 50px 50px 0 50px;
+  }
+  @media (max-width: 768px) {
+    padding: 50px 35px 0 35px;
+  }
+  @media (max-width: 500px) {
+    padding: 50px 20px 0 20px;
+  }
+}
+
+.servicesKindSpan {
+  margin-bottom: 35px;
+  display: flex;
+  color: $header-text-color;
+  font-size: 36px;
+  font-weight: 600;
+  @media (max-width: 1600px) {
+    font-size: 30px;
+  }
+  @media (max-width: 500px) {
+    margin: 0 auto 35px auto;
+    font-size: 28px;
+    text-align: center;
+  }
+  @media (max-width: 360px) {
+    font-size: 24px;
+  }
+}
+
+.servicesKindContentRowDiv {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
+.what-offer-div {
+  width: 60%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1600px) {
+    width: 55%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.what-offer-div ul{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.what-offer-div ul li {
+  margin: 0 0 50px 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.what-offer-div img {
+  width: 100px;
+  height: auto;
+  margin-right: 50px;
+  @media (min-width: 769px) and (max-width: 1600px) {
+    width: clamp(70px, 9vw, 100px);
+    margin-right: clamp(25px, 3vw, 50px);
+  }
+  @media (max-width: 500px) {
+    margin: 0;
+  }
+}
+
+.what-offer-div div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media (max-width: 500px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.what-offer-div ul li span{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  @media (min-width: 769px) and (max-width: 1279px) {
+    font-size: 22px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  @media (max-width: 500px) {
+    text-align: center;
+    margin-top: 15px;
+  }
+  @media (max-width: 360px) {
+    font-size: 20px;
+  }
+}
+
+.what-offer-div ul li p{
+  width: 90%;
+  margin: 0;
+  font-size: 22px;
+  color: $services-kind-what-offer-p-color;
+  @media (min-width: 769px) and (max-width: 1600px) {
+    font-size: 20px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  @media (max-width: 500px) {
+    text-align: center;
+    margin-top: 15px;
+  }
+  @media (max-width: 360px) {
+    font-size: 18px;
+  }
+}
+
+.why-worth-div {
+  width: 40%;
+  height: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: $services-kind-contentRowPart2Div-background;
+  border-radius: 20px;
+  padding: 50px 40px;
+  font-size: 24px;
+  @media (min-width: 769px) and (max-width: 1600px) {
+    width: 45%;
+    font-size: 20px;
+    padding: 40px 30px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  @media (max-width: 500px) {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 20px;
+    padding: 25px 20px;
+  }
+  @media (max-width: 360px) {
+    padding: 20px 15px;
+    font-size: 18px;
+  }
+}
+
+.why-worth-div ul{
+  margin: 0;
+  padding: 0 0 0 25px;
+  list-style-type: none;
+  @media (max-width: 500px), (min-width: 769px) and (max-width: 1600px) {
+    padding: 0 0 0 10px;
+  }
+}
+
+.why-worth-div ul li{
+  margin: 0 0 35px 0;
+  padding: 0;
+  list-style-type: none;
+  @media (max-width: 500px), (min-width: 769px) and (max-width: 1600px) {
+    margin: 0 0 25px 0;
+  }
+}
+
+.why-worth-div ul li:last-child{
+  margin: 0;
+}
+
+.servicesKindContentLastDiv {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    margin: 25px 0;
+  }
+}
+
+.servicesKindContentLastDiv ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: 1600px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.servicesKindContentLastDiv ul li{
+  margin: 0;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: $services-kind-contentRowPart2Div-background;
+  border-radius: 40px;
+  @media (min-width: 769px) and (max-width: 1600px) {
+    margin-bottom: 50px;
+    padding: 20px 15px;
+    }
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 25px;
+    padding: 15px 10px;
+    border-radius: 30px;
+  }
+}
+
+.circle-span-number {
+  margin: 0 30px 0 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $footer-text-color;
+  background-color: $services-page-seemore-link;
+  font-size: 26px;
+  font-weight: 500;
+  @media (max-width: 500px) {
+    height: 45px;
+    width: 45px;
+    font-size: 22px;
+  }
+  @media (max-width: 360px) {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+}
+
+.servicesKindContentLastDiv p{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin: 0;
+  @media (min-width: 769px) and (max-width: 1600px) {
+    font-size: 22px;
+    width: clamp(150px, 25vw, 500px);
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
+  @media (max-width: 360px) {
+    font-size: 18px;
+  }
+}
+
 h1 {
   margin: 0;
   color: $footer-text-color;
@@ -75,7 +372,7 @@ h1 {
   }
 }
 
-h6 {
+h2 {
   margin: 40px 0 50px 0;
   color: $footer-text-color;
   font-family: $home-page-banner-font;

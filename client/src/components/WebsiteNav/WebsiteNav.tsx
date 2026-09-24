@@ -1,4 +1,4 @@
-import {Link, useLocation} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import styles from "./WebsiteNav.module.scss";
 
 const NAV_ITEMS = [
@@ -13,19 +13,19 @@ type WebsiteNavHeaderProps = {
 }
 
 const WebsiteNavHeader = ({ setOpen }: WebsiteNavHeaderProps) => {
-    const {pathname} = useLocation();
 
     return (
         <div className={styles.websiteLayoutNavContainer}>
             <nav>
                 <ul>
                     {NAV_ITEMS.map((item) => (
-                        <li>
-                            <Link
+                        <li key={item.path}>
+                            <NavLink
                                 to={item.path}
-                                onClick={()=>{if(setOpen)setOpen(false);}}
-                                className={pathname === item.path ? `${styles.active}` : ""}
-                            >{item.label}</Link>
+                                end={item.path === '/'}
+                                onClick={()=>{if(setOpen) setOpen(false);}}
+                                className={({isActive}) => isActive ? styles.active : ""}
+                            >{item.label}</NavLink>
                         </li>
                     ))}
                 </ul>
@@ -40,8 +40,8 @@ const WebsiteNavFooter = () => {
             <nav>
                 <ul>
                     {NAV_ITEMS.map((item) => (
-                        <li>
-                            <Link to={item.path} className={``}>{item.label}</Link>
+                        <li key={item.path}>
+                            <NavLink to={item.path}>{item.label}</NavLink>
                         </li>
                     ))}
                 </ul>

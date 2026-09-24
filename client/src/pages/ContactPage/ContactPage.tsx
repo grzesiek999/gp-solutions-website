@@ -1,8 +1,14 @@
-import ContactPageBanner from "../../components/ContactPageBanner/ContactPageBanner.tsx";
-import ContactPageContent from "../../components/ContactPageContent/ContactPageContent.tsx";
-import ContactPageMap from "../../components/ContactPageMap/ContactPageMap.tsx";
 import {Helmet} from "react-helmet-async";
+import Banner from "../../components/Banner/Banner.tsx";
+import ContactPageContent from "../../components/ContactPage/ContactPageContent/ContactPageContent.tsx";
+import ContactPageMap from "../../components/ContactPage/ContactPageMap/ContactPageMap.tsx";
 
+const ContactPageBannerContent = (
+    <>
+        <h1>Kontakt</h1>
+        <h2>Skontaktuj się z nami - chętnie odpowiemy na Twoje pytania.</h2>
+    </>
+)
 
 const ContactPage = () => {
     return (
@@ -18,7 +24,10 @@ const ContactPage = () => {
                     href="https://gpitsolutions.pl/contact"
                 />
             </Helmet>
-            <ContactPageBanner />
+            <Banner
+                backgroundImgPath={`url("/images/contact_banner.webp")`}
+                content={ContactPageBannerContent}
+            />
             <ContactPageContent />
             <ContactPageMap />
         </>
