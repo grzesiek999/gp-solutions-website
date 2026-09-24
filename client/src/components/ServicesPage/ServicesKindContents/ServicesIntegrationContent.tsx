@@ -1,4 +1,24 @@
+import {useMedia} from "use-media";
 
+const WhyWorthListBigSpace = (
+    <ul>
+        <li>✓ &nbsp;&nbsp;&nbsp; Pełna spójność danych</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Automatyzacja przepływu informacji</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Oszczędność czasu</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Eliminacja ręcznej pracy</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Bezpieczne połączenia</li>
+    </ul>
+)
+
+const WhyWorthListSmallSpace = (
+    <ul>
+        <li>✓ &nbsp; Pełna spójność danych</li>
+        <li>✓ &nbsp; Automatyzacja przepływu informacji</li>
+        <li>✓ &nbsp; Oszczędność czasu</li>
+        <li>✓ &nbsp; Eliminacja ręcznej pracy</li>
+        <li>✓ &nbsp; Bezpieczne połączenia</li>
+    </ul>
+)
 
 const WebsitesOffersList = () => {
 
@@ -57,6 +77,8 @@ const WebsitesOffersList = () => {
 
 const ServicesIntegrationContent = () => {
 
+    const isMobile = useMedia({ maxWidth: 1600 });
+
     return (
         <div className='servicesKindContentDiv'>
             <div className='servicesKindContentRowDiv'>
@@ -66,13 +88,7 @@ const ServicesIntegrationContent = () => {
                 </div>
                 <div className='why-worth-div'>
                     <span className='servicesKindSpan'>Korzyści</span>
-                    <ul>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Pełna spójność danych</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Automatyzacja przepływu informacji</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Oszczędność czasu</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Eliminacja ręcznej pracy</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Bezpieczne połączenia</li>
-                    </ul>
+                    {isMobile ? WhyWorthListSmallSpace :WhyWorthListBigSpace}
                 </div>
             </div>
             <div className='servicesKindContentLastDiv'>

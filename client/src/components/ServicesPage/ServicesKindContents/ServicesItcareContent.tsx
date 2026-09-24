@@ -1,4 +1,24 @@
+import {useMedia} from "use-media";
 
+const WhyWorthListBigSpace = (
+    <ul>
+        <li>✓ &nbsp;&nbsp;&nbsp; Szybka reakcja</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Stałe wsparcie</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Bezpieczeństwo infrastruktury</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Optymalizacja kosztów</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Spójność i ciągłość działania</li>
+    </ul>
+)
+
+const WhyWorthListSmallSpace = (
+    <ul>
+        <li>✓ &nbsp; Szybka reakcja</li>
+        <li>✓ &nbsp; Stałe wsparcie</li>
+        <li>✓ &nbsp; Bezpieczeństwo infrastruktury</li>
+        <li>✓ &nbsp; Optymalizacja kosztów</li>
+        <li>✓ &nbsp; Spójność i ciągłość działania</li>
+    </ul>
+)
 
 const WebsitesOffersList = () => {
 
@@ -57,6 +77,8 @@ const WebsitesOffersList = () => {
 
 const ServicesItcareContent = () => {
 
+    const isMobile = useMedia({ maxWidth: 1600 });
+
     return (
         <div className='servicesKindContentDiv'>
             <div className='servicesKindContentRowDiv'>
@@ -66,13 +88,7 @@ const ServicesItcareContent = () => {
                 </div>
                 <div className='why-worth-div'>
                     <span className='servicesKindSpan'>Dlaczego warto?</span>
-                    <ul>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Szybka reakcja</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Stałe wsparcie</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Bezpieczeństwo infrastruktury</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Optymalizacja kosztów</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Spójność i ciągłość działania</li>
-                    </ul>
+                    {isMobile ? WhyWorthListSmallSpace :WhyWorthListBigSpace}
                 </div>
             </div>
             <div className='servicesKindContentLastDiv'>

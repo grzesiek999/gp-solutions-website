@@ -1,4 +1,24 @@
+import {useMedia} from "use-media";
 
+const WhyWorthListBigSpace = (
+    <ul>
+        <li>✓ &nbsp;&nbsp;&nbsp; Automatyzacja procesów</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Większa efektywność</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Skalowalność rozwiązań</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Pełne dopasowanie do potrzeb</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Wsparcie techniczne</li>
+    </ul>
+)
+
+const WhyWorthListSmallSpace = (
+    <ul>
+        <li>✓ &nbsp; Automatyzacja procesów</li>
+        <li>✓ &nbsp; Większa efektywność</li>
+        <li>✓ &nbsp; Skalowalność rozwiązań</li>
+        <li>✓ &nbsp; Pełne dopasowanie do potrzeb</li>
+        <li>✓ &nbsp; Wsparcie techniczne</li>
+    </ul>
+)
 
 const WebsitesOffersList = () => {
 
@@ -57,6 +77,8 @@ const WebsitesOffersList = () => {
 
 const ServicesSystemsContent = () => {
 
+    const isMobile = useMedia({ maxWidth: 1600 });
+
     return (
         <div className='servicesKindContentDiv'>
             <div className='servicesKindContentRowDiv'>
@@ -66,13 +88,7 @@ const ServicesSystemsContent = () => {
                 </div>
                 <div className='why-worth-div'>
                     <span className='servicesKindSpan'>Korzyści dla Twojej firmy</span>
-                    <ul>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Automatyzacja procesów</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Większa efektywność</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Skalowalność rozwiązań</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Pełne dopasowanie do potrzeb</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Wsparcie techniczne</li>
-                    </ul>
+                    {isMobile ? WhyWorthListSmallSpace :WhyWorthListBigSpace}
                 </div>
             </div>
             <div className='servicesKindContentLastDiv'>

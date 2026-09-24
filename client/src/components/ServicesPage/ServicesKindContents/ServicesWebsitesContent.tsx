@@ -1,4 +1,24 @@
+import {useMedia} from "use-media";
 
+const WhyWorthListBigSpace = (
+    <ul>
+        <li>✓ &nbsp;&nbsp;&nbsp; Nowoczesny wygląd</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Responsywność</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Szybkie działanie</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Optymalizacja SEO</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Indywidualne podejście</li>
+    </ul>
+)
+
+const WhyWorthListSmallSpace = (
+    <ul>
+        <li>✓ &nbsp; Nowoczesny wygląd</li>
+        <li>✓ &nbsp; Responsywność</li>
+        <li>✓ &nbsp; Szybkie działanie</li>
+        <li>✓ &nbsp; Optymalizacja SEO</li>
+        <li>✓ &nbsp; Indywidualne podejście</li>
+    </ul>
+)
 
 const WebsitesOffersList = () => {
 
@@ -57,6 +77,8 @@ const WebsitesOffersList = () => {
 
 const ServicesWebsitesContent = () => {
 
+    const isMobile = useMedia({ maxWidth: 1600 });
+
     return (
         <div className='servicesKindContentDiv'>
             <div className='servicesKindContentRowDiv'>
@@ -66,13 +88,7 @@ const ServicesWebsitesContent = () => {
                 </div>
                 <div className='why-worth-div'>
                     <span className='servicesKindSpan'>Dlaczego warto?</span>
-                    <ul>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Nowoczesny wygląd</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Responsywność</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Szybkie działanie</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Optymalizacja SEO</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Indywidualne podejście</li>
-                    </ul>
+                    {isMobile ? WhyWorthListSmallSpace :WhyWorthListBigSpace}
                 </div>
             </div>
             <div className='servicesKindContentLastDiv'>

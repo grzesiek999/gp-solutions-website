@@ -1,4 +1,24 @@
+import {useMedia} from "use-media";
 
+const WhyWorthListBigSpace = (
+    <ul>
+        <li>✓ &nbsp;&nbsp;&nbsp; Ochrona danych i systemów</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Minimalizacja ryzyka ataków</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Zgodność z najlepszymi praktykami</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Większe bezpieczeństwo firmy</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Wsparcie ekspertów</li>
+    </ul>
+)
+
+const WhyWorthListSmallSpace = (
+    <ul>
+        <li>✓ &nbsp; Ochrona danych i systemów</li>
+        <li>✓ &nbsp; Minimalizacja ryzyka ataków</li>
+        <li>✓ &nbsp; Zgodność z najlepszymi praktykami</li>
+        <li>✓ &nbsp; Większe bezpieczeństwo firmy</li>
+        <li>✓ &nbsp; Wsparcie ekspertów</li>
+    </ul>
+)
 
 const WebsitesOffersList = () => {
 
@@ -57,6 +77,8 @@ const WebsitesOffersList = () => {
 
 const ServicesCybersecurityContent = () => {
 
+    const isMobile = useMedia({ maxWidth: 1600 });
+
     return (
         <div className='servicesKindContentDiv'>
             <div className='servicesKindContentRowDiv'>
@@ -66,13 +88,7 @@ const ServicesCybersecurityContent = () => {
                 </div>
                 <div className='why-worth-div'>
                     <span className='servicesKindSpan'>Korzyści</span>
-                    <ul>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Ochrona danych i systemów</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Minimalizacja ryzyka ataków</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Zgodność z najlepszymi praktykami</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Większe bezpieczeństwo firmy</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Wsparcie ekspertów</li>
-                    </ul>
+                    {isMobile ? WhyWorthListSmallSpace :WhyWorthListBigSpace}
                 </div>
             </div>
             <div className='servicesKindContentLastDiv'>

@@ -1,4 +1,24 @@
+import {useMedia} from "use-media";
 
+const WhyWorthListBigSpace = (
+    <ul>
+        <li>✓ &nbsp;&nbsp;&nbsp; Ochrona przed utratą danych</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Ciągłość działania firmy</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Szybkość przywracania systemów</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Bezpieczne przechowywanie</li>
+        <li>✓ &nbsp;&nbsp;&nbsp; Spokój i pewność działania</li>
+    </ul>
+)
+
+const WhyWorthListSmallSpace = (
+    <ul>
+        <li>✓ &nbsp; Ochrona przed utratą danych</li>
+        <li>✓ &nbsp; Ciągłość działania firmy</li>
+        <li>✓ &nbsp; Szybkość przywracania systemów</li>
+        <li>✓ &nbsp; Bezpieczne przechowywanie</li>
+        <li>✓ &nbsp; Spokój i pewność działania</li>
+    </ul>
+)
 
 const WebsitesOffersList = () => {
 
@@ -57,6 +77,8 @@ const WebsitesOffersList = () => {
 
 const ServicesBackupsContent = () => {
 
+    const isMobile = useMedia({ maxWidth: 1600 });
+
     return (
         <div className='servicesKindContentDiv'>
             <div className='servicesKindContentRowDiv'>
@@ -66,13 +88,7 @@ const ServicesBackupsContent = () => {
                 </div>
                 <div className='why-worth-div'>
                     <span className='servicesKindSpan'>Dlaczego to ważne?</span>
-                    <ul>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Ochrona przed utratą danych</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Ciągłość działania firmy</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Szybkość przywracania systemów</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Bezpieczne przechowywanie</li>
-                        <li>✓ &nbsp;&nbsp;&nbsp; Spokój i pewność działania</li>
-                    </ul>
+                    {isMobile ? WhyWorthListSmallSpace :WhyWorthListBigSpace}
                 </div>
             </div>
             <div className='servicesKindContentLastDiv'>
