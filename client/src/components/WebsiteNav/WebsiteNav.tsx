@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom";
 import styles from "./WebsiteNav.module.scss";
+import {useMedia} from "use-media";
 
 const NAV_ITEMS = [
     { label: "Strona główna", path: "/" },
@@ -41,6 +42,8 @@ const ServicesList = (
 
 const WebsiteNavHeader = ({ setOpen }: WebsiteNavHeaderProps) => {
 
+    const isMobile = useMedia({maxWidth: 768});
+
     return (
         <div className={styles.websiteLayoutNavContainer}>
             <nav>
@@ -53,7 +56,7 @@ const WebsiteNavHeader = ({ setOpen }: WebsiteNavHeaderProps) => {
                                 onClick={()=>{if(setOpen) setOpen(false);}}
                                 className={({isActive}) => isActive ? styles.active : ""}
                             >{item.label}</NavLink>
-                            {item.path === '/services' && ServicesList}
+                            {!isMobile && item.path === '/services' ? ServicesList : null}
                         </li>
                     ))}
                 </ul>

@@ -114,7 +114,7 @@
 }
 
 .servicesListDiv {
-  padding-top: 50px;
+  padding-top: 35px;
   display: none;
   position: absolute;
   z-index: 100;
@@ -132,25 +132,31 @@
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  width: 18vw;
+  width: 14vw;
   box-shadow: 0px 10px 12px 0px $header-shadow;
   -webkit-box-shadow: 0px 10px 12px 0px $header-shadow;
   -moz-box-shadow: 0px 10px 12px 0px $header-shadow;
+  @media (max-width: 1700px) {
+    width: 16vw;
+  }
   @media (max-width: 1280px) {
-    width: 19vw;
+    width: 18vw;
   }
 }
 
 .servicesListDiv ul li{
   margin: 0 !important;
   padding: 0 !important;
-  width: 16vw;
+  width: 12vw;
   border-bottom: 1px solid $header-border-color;
   &:hover {
     scale: none !important;
   }
+  @media (max-width: 1700px) {
+    width: 14vw;
+  }
   @media (max-width: 1280px) {
-    width: 18vw;
+    width: 16vw;
   }
 }
 
@@ -158,15 +164,15 @@
   text-decoration: none;
   color: $header-text-color;
   font-family: $font-main;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 20px 0;
+  padding: 15px 0;
   @media (max-width: 1280px) {
-    padding: 15px 0;
-    font-size: clamp(12px, 1.6vw, 20px);
+    padding: 12px 0;
+    font-size: clamp(12px, 1.4vw, 16px);
   }
 }
 
